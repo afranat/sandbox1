@@ -1,0 +1,14 @@
+RUN mv "$PHP_INI_DIR/php-ini-development" "$PHP_INI_DIR/php.ini"
+# Install Postgre PDO
+RUN apt-get install -y libpq-dev \
+    && docker-php-ext-configure pgsql -with-pgsql=/usr/local/pgsql \
+    && docker-php-ext-install pdo pdo_pgsql pgsql
+
+
+   volumes:
+       - .data/mysql:/var/lib/mysql
+
+       EXPOSE 80
+
+       RUN docker-php-ext-install mysqli
+       RUN docker-php-ext-install pdo_mysql

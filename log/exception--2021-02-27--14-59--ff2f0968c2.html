@@ -1,0 +1,1103 @@
+<!DOCTYPE html><!-- "' --></textarea></script></style></pre></xmp></a></iframe></noembed></noframes></noscript></option></select></template></title></table>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="noindex">
+	<meta name="generator" content="Tracy by Nette Framework">
+
+	<title>Nette\InvalidStateException: Cannot send header after HTTP headers have been sent (output started at /var/www/html/www/index.php:4).</title>
+	<!-- in /var/www/html/vendor/nette/http/src/Http/Response.php:307 -->
+	
+	<style class="tracy-debug">
+	#tracy-bs{font: 9pt/1.5 Verdana,sans-serif;background: white;color: #333;position: absolute;z-index: 20000;left: 0;top: 0;width: 100%;text-align: left}#tracy-bs a{text-decoration: none;color: #328ADC;padding: 2px 4px;margin: -2px -4px}#tracy-bs a+a{margin-left: 0}#tracy-bs a:hover,#tracy-bs a:focus{color: #085AA3}#tracy-bs-toggle{position: absolute;right: .5em;top: .5em;text-decoration: none;background: #CD1818;color: white!important;padding: 3px}.tracy-bs-main{display: flex;flex-direction: column;min-height: 100vh}.tracy-bs-main.tracy-collapsed{display: none}#tracy-bs div.panel:last-of-type{flex: 1}#tracy-bs-error{background: #CD1818;color: white;font-size: 13pt}#tracy-bs-error a{color: #ffefa1!important}#tracy-bs-error span span{font-size: 80%;color: rgba(255,255,255,0.5);text-shadow: none}#tracy-bs-error a.action{color: white!important;opacity: 0;font-size: .7em;border-bottom: none!important}#tracy-bs-error:hover a.action{opacity: .6}#tracy-bs-error a.action:hover{opacity: 1}#tracy-bs-error i{color: #ffefa1;font-style: normal}#tracy-bs h1{font-size: 15pt;font-weight: normal;text-shadow: 1px 1px 2px rgba(0,0,0,.3);margin: .7em 0}#tracy-bs h1 span{white-space: pre-wrap}#tracy-bs h2{font-size: 14pt;font-weight: normal;margin: .6em 0}#tracy-bs h3{font-size: 10pt;font-weight: bold;margin: 1em 0;padding: 0}#tracy-bs p,#tracy-bs pre{margin: .8em 0}#tracy-bs pre,#tracy-bs code,#tracy-bs table{font: 9pt/1.5 Consolas,monospace!important}#tracy-bs pre,#tracy-bs table{background: #FDF5CE;padding: .4em .7em;border: 1px dotted silver;overflow: auto}#tracy-bs table pre{padding: 0;margin: 0;border: none}#tracy-bs table{border-collapse: collapse;width: 100%;margin-bottom: 1em}#tracy-bs td,#tracy-bs th{vertical-align: top;text-align: left;padding: 2px 6px;border: 1px solid #e6dfbf}#tracy-bs th{font-weight: bold}#tracy-bs tr>:first-child{width: 20%}#tracy-bs tr:nth-child(2n),#tracy-bs tr:nth-child(2n) pre{background-color: #F7F0CB}#tracy-bs ol{margin: 1em 0;padding-left: 2.5em}#tracy-bs ul{font-size: 7pt;padding: 2em 3em;margin: 1em 0 0;color: #777;background: #F6F5F3;border-top: 1px solid #DDD;list-style: none}#tracy-bs .footer-logo a{position: absolute;bottom: 0;right: 0;width: 100px;height: 50px;background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAAAUBAMAAAD/1DctAAAAMFBMVEWupZzj39rEvbTy8O3X0sz9/PvGwLu8tavQysHq6OS0rKP5+Pbd2dT29fPMxbzPx8DKErMJAAAACXBIWXMAAAsTAAALEwEAmpwYAAACGUlEQVQoFX3TQWgTQRQA0MWLIJJDYehBTykhG5ERTx56K1u8eEhCYtomE7x5L4iLh0ViF7egewuFFqSIYE6hIHsIYQ6CQSg9CDKn4QsNCRlB59C74J/ZNHW1+An5+bOPyf6/s46oz2P+A0yIeZZ2ieEHi6TOnLKTxvWq+b52mxlVO3xnM1s7xLX1504XQH65OnW2dBqn7cCkYsFsfYsWpyY/2salmFTpEyzeR8zosYqMdiPDXdyU52K1wgEa/SjGpdEwUAxqvRfckQCDOyFearsEHe2grvkh/cFAHKvdtI3lcVceKQIOFpv+FOZaNPQBwJZLPp+hfrvT5JZXaUFsR8zqQc9qSgAharkfS5M/5F6nGJJAtXq/eLr3ucZpHccSxOOIPaQhtHohpCH2Xu6rLmQ0djnr4/+J3C6v+AW8/XWYxwYNdlhWj/P5fPSTQwVr0T9lGxdaBCqErNZaqYnEwbkjEB3NasGF3lPdrHa1nnxNOMgj0+neePUPjd2v/qVvUv29ifvc19huQ48qwXShy/9o8o3OSk0cs37mOFd0Ydgvsf/oZEnPVtggfd66lORn9mDyyzXU13SRtH2L6aR5T/snGAcZPfAXz5J1YlJWBEuxdMYqQecpBrlM49xAbmqyHA+xlA1FxBtqT2xmJoNXZlIt74ZBLeJ9ZGDqByNI7p543idzJ23vXEv7IgnsxiS+eNtwNbFdLq7+Bi4wQ0I4SVb9AAAAAElFTkSuQmCC') no-repeat;opacity: .6;padding: 0;margin: 0}#tracy-bs .footer-logo a:hover,#tracy-bs .footer-logo a:focus{opacity: 1;transition: opacity 0.1s}#tracy-bs div.panel{padding: 1px 25px}#tracy-bs div.inner{background: #F4F3F1;padding: .1em 1em 1em;border-radius: 8px}#tracy-bs .outer{overflow: auto}#tracy-bs.mac .outer{padding-bottom: 12px}#tracy-bs pre.code>div{min-width: 100%;float: left;white-space: pre}#tracy-bs .highlight{background: #CD1818;color: white;font-weight: bold;font-style: normal;display: block;padding: 0 .4em;margin: 0 -.4em}#tracy-bs .line{color: #9F9C7F;font-weight: normal;font-style: normal}#tracy-bs a.tracy-editor{color: inherit;border-bottom: 1px dotted rgba(0,0,0,.3);border-radius: 3px}#tracy-bs a.tracy-editor:hover{background: #0001}#tracy-bs span[data-tracy-href]{border-bottom: 1px dotted rgba(0,0,0,.3)}#tracy-bs .tracy-dump-whitespace{color: #0003}#tracy-bs .caused{float: right;padding: .3em .6em;background: #df8075;border-radius: 0 0 0 8px;white-space: nowrap}#tracy-bs .caused a{color: white}#tracy-bs .args tr:first-child>*{position: relative}#tracy-bs .args tr:first-child td:before{position: absolute;right: .3em;content:'may not be true';opacity: .4}.tracy-collapsed{display: none}.tracy-toggle.tracy-collapsed{display: inline}.tracy-toggle{cursor: pointer;user-select: none}.tracy-toggle:after{content:'';display: inline-block;vertical-align: middle;line-height: 0;border-top: .6ex solid;border-right: .6ex solid transparent;border-left: .6ex solid transparent;transform: scale(1,1.5);margin: 0 .2ex 0 .7ex;transition: .1s transform;opacity: .5}.tracy-toggle.tracy-collapsed:after{transform: rotate(-90deg) scale(1,1.5) translate(.1ex,0)}.tracy-sortable>:first-child>tr:first-child>*{position: relative}.tracy-sortable>:first-child>tr:first-child>*:hover:before{position: absolute;right: .3em;content:"\21C5";opacity: .4;font-weight: normal}.tracy-dump.tracy-light{text-align: left;color: #444;background: #fdf9e2;border-radius: 4px;padding: 1em;margin: 1em 0;word-break: break-all;white-space: pre-wrap}.tracy-dump.tracy-light div{padding-left: 2.5ex}.tracy-dump.tracy-light div div{border-left: 1px solid rgba(0,0,0,.1);margin-left: .5ex}.tracy-dump.tracy-light div div:hover{border-left-color: rgba(0,0,0,.25)}.tracy-light .tracy-dump-location{color: gray;font-size: 80%;text-decoration: none;background: none;opacity: .5;float: right;cursor: pointer}.tracy-light .tracy-dump-location:hover,.tracy-light .tracy-dump-location:focus{opacity: 1}.tracy-light .tracy-dump-array,.tracy-light .tracy-dump-object{color: #C22;user-select: text}.tracy-light .tracy-dump-string{color: #35D;white-space: break-spaces}.tracy-light div.tracy-dump-string{position: relative;padding-left: 3.5ex}.tracy-light .tracy-dump-lq{margin-left: -1ex}.tracy-light div.tracy-dump-string:before{content:'';position: absolute;left: 3ex;top: 1.5em;bottom: 0;border-left: 1px solid rgba(0,0,0,.1)}.tracy-light .tracy-dump-virtual span,.tracy-light .tracy-dump-dynamic span,.tracy-light .tracy-dump-string span{color: rgba(0,0,0,0.5)}.tracy-light .tracy-dump-virtual i,.tracy-light .tracy-dump-dynamic i,.tracy-light .tracy-dump-string i{font-size: 80%;font-style: normal;color: rgba(0,0,0,0.5);user-select: none}.tracy-light .tracy-dump-number{color: #090}.tracy-light .tracy-dump-null,.tracy-light .tracy-dump-bool{color: #850}.tracy-light .tracy-dump-virtual{font-style: italic}.tracy-light .tracy-dump-public::after{content:' pub'}.tracy-light .tracy-dump-protected::after{content:' pro'}.tracy-light .tracy-dump-private::after{content:' pri'}.tracy-light .tracy-dump-public::after,.tracy-light .tracy-dump-protected::after,.tracy-light .tracy-dump-private::after,.tracy-light .tracy-dump-hash{font-size: 85%;color: rgba(0,0,0,0.5)}.tracy-light .tracy-dump-indent{display: none}.tracy-light .tracy-dump-highlight{background: #C22;color: white;border-radius: 2px;padding: 0 2px;margin: 0 -2px}span[data-tracy-href]{border-bottom: 1px dotted rgba(0,0,0,.2)}.tracy-light .tracy-dump-flash{animation: tracy-dump-flash .2s ease}@keyframes tracy-dump-flash{0%{background: #c0c0c033}}	</style>
+</head>
+
+
+<body>
+<div id="tracy-bs" itemscope>
+	<a id="tracy-bs-toggle" href="#" class="tracy-toggle"></a>
+	<div class="tracy-bs-main">
+		<div id="tracy-bs-error" class="panel">
+			<p>Nette\InvalidStateException</p>
+
+			<h1><span>Cannot send header after HTTP headers have been sent (output started at <a href="editor://open/?file=%2Fvar%2Fwww%2Fhtml%2Fwww%2Findex.php&amp;line=4&amp;search=&amp;replace=" class="tracy-editor">/var/www/html/www/index.php:4</a>).</span>
+			</h1>
+		</div>
+
+		
+
+				
+			
+
+			
+
+						
+			<div class="panel">
+			<h2><a data-tracy-ref="^+" class="tracy-toggle tracy-collapsed">Source file</a></h2>
+
+			<div class="tracy-collapsed inner">
+				<p><b>File:</b> <a href="editor://open/?file=%2Fvar%2Fwww%2Fhtml%2Fvendor%2Fnette%2Fhttp%2Fsrc%2FHttp%2FResponse.php&amp;line=307&amp;search=&amp;replace=" title="/var/www/html/vendor/nette/http/src/Http/Response.php:307" class="tracy-editor">.../vendor/nette/http/src/Http/<b>Response.php</b>:307</a></p>
+				<pre title="Ctrl-Click to open in editor" data-tracy-href="editor://open/?file=%2Fvar%2Fwww%2Fhtml%2Fvendor%2Fnette%2Fhttp%2Fsrc%2FHttp%2FResponse.php&amp;line=307&amp;search=&amp;replace=" class='code'><div><code><span style="color: #06B"><span style="color: #998; font-style: italic"><span class='line'>297:</span>        </span><span style="color: #D24; font-weight: bold">public function </span><span style="color: #000">deleteCookie</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">string $name</span><span style="color: #D24; font-weight: bold">, </span><span style="color: #000">string $path </span><span style="color: #D24; font-weight: bold">= </span><span style="color: #000">null</span><span style="color: #D24; font-weight: bold">, </span><span style="color: #000">string $domain </span><span style="color: #D24; font-weight: bold">= </span><span style="color: #000">null</span><span style="color: #D24; font-weight: bold">, </span><span style="color: #000">bool $secure </span><span style="color: #D24; font-weight: bold">= </span><span style="color: #000">null</span><span style="color: #D24; font-weight: bold">): </span><span style="color: #000">void
+<span class='line'>298:</span>        </span><span style="color: #D24; font-weight: bold">{
+<span class='line'>299:</span>            </span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">setCookie</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$name</span><span style="color: #D24; font-weight: bold">, </span><span style="color: #080">''</span><span style="color: #D24; font-weight: bold">, </span><span style="color: #000">0</span><span style="color: #D24; font-weight: bold">, </span><span style="color: #000">$path</span><span style="color: #D24; font-weight: bold">, </span><span style="color: #000">$domain</span><span style="color: #D24; font-weight: bold">, </span><span style="color: #000">$secure</span><span style="color: #D24; font-weight: bold">);
+<span class='line'>300:</span>        }
+<span class='line'>301:</span>    
+<span class='line'>302:</span>    
+<span class='line'>303:</span>        private function </span><span style="color: #000">checkHeaders</span><span style="color: #D24; font-weight: bold">(): </span><span style="color: #000">void
+<span class='line'>304:</span>        </span><span style="color: #D24; font-weight: bold">{
+<span class='line'>305:</span>            if (</span><span style="color: #000">PHP_SAPI </span><span style="color: #D24; font-weight: bold">=== </span><span style="color: #080">'cli'</span><span style="color: #D24; font-weight: bold">) {
+<span class='line'>306:</span>            } elseif (</span><span style="color: #000">headers_sent</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$file</span><span style="color: #D24; font-weight: bold">, </span><span style="color: #000">$line</span><span style="color: #D24; font-weight: bold">)) {
+<span class='highlight'>307:                throw new Nette\InvalidStateException('Cannot send header after HTTP headers have been sent' . ($file ? " (output started at $file:$line)." : '.'));
+</span></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #080"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #080"></span><span style="color: #000"></span><span style="color: #080"></span><span style="color: #000"></span><span style="color: #080"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #080"></span><span style="color: #D24; font-weight: bold"><span class='line'>308:</span>    
+<span class='line'>309:</span>            } elseif (
+<span class='line'>310:</span>                </span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">warnOnBuffer </span><span style="color: #D24; font-weight: bold">&amp;&amp;
+<span class='line'>311:</span>                </span><span style="color: #000">ob_get_length</span><span style="color: #D24; font-weight: bold">() &amp;&amp;
+</span></span></code></div></pre>			</div></div>
+
+
+									<div class="panel">
+				<h2><a data-tracy-ref="^+" class="tracy-toggle">Call stack</a></h2>
+
+				<div class="inner">
+				<ol>
+										<li><p>
+
+											<a href="editor://open/?file=%2Fvar%2Fwww%2Fhtml%2Fvendor%2Fnette%2Fhttp%2Fsrc%2FHttp%2FResponse.php&amp;line=91&amp;search=&amp;replace=" title="/var/www/html/vendor/nette/http/src/Http/Response.php:91" class="tracy-editor">.../vendor/nette/http/src/Http/<b>Response.php</b>:91</a>					
+					<a data-tracy-ref="^p + .file" class="tracy-toggle tracy-collapsed">source</a>&nbsp; 
+					<b>Nette\Http\Response-&gt;</b><b>checkHeaders</b> ()
+					</p>
+
+											<div class="tracy-collapsed file"><pre title="Ctrl-Click to open in editor" data-tracy-href="editor://open/?file=%2Fvar%2Fwww%2Fhtml%2Fvendor%2Fnette%2Fhttp%2Fsrc%2FHttp%2FResponse.php&amp;line=91&amp;search=&amp;replace=" class='code'><div><code><span style="color: #06B"><span style="color: #D24; font-weight: bold"><span class='line'>81:</span>        }
+<span class='line'>82:</span>    
+<span class='line'>83:</span>    
+<span class='line'>84:</span>        </span><span style="color: #998; font-style: italic">/**
+<span class='line'>85:</span>         * Sends an HTTP header and overwrites previously sent header of the same name.
+<span class='line'>86:</span>         * @return static
+<span class='line'>87:</span>         * @throws Nette\InvalidStateException  if HTTP headers have been sent
+<span class='line'>88:</span>         */
+<span class='line'>89:</span>        </span><span style="color: #D24; font-weight: bold">public function </span><span style="color: #000">setHeader</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">string $name</span><span style="color: #D24; font-weight: bold">, ?</span><span style="color: #000">string $value</span><span style="color: #D24; font-weight: bold">)
+<span class='line'>90:</span>        {
+<span class='highlight'>91:            self::checkHeaders();
+</span></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"><span class='line'>92:</span>            if (</span><span style="color: #000">$value </span><span style="color: #D24; font-weight: bold">=== </span><span style="color: #000">null</span><span style="color: #D24; font-weight: bold">) {
+<span class='line'>93:</span>                </span><span style="color: #000">header_remove</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$name</span><span style="color: #D24; font-weight: bold">);
+<span class='line'>94:</span>            } elseif (</span><span style="color: #000">strcasecmp</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$name</span><span style="color: #D24; font-weight: bold">, </span><span style="color: #080">'Content-Length'</span><span style="color: #D24; font-weight: bold">) === </span><span style="color: #000">0 </span><span style="color: #D24; font-weight: bold">&amp;&amp; </span><span style="color: #000">ini_get</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #080">'zlib.output_compression'</span><span style="color: #D24; font-weight: bold">)) {
+<span class='line'>95:</span>                </span><span style="color: #998; font-style: italic">// ignore, PHP bug #44164
+</span></span></code></div></pre></div>
+					
+					
+										</li>
+										<li><p>
+
+											<a href="editor://open/?file=%2Fvar%2Fwww%2Fhtml%2Ftemp%2Fcache%2Fnette.configurator%2FContainer_bc6707862c.php&amp;line=442&amp;search=&amp;replace=" title="/var/www/html/temp/cache/nette.configurator/Container_bc6707862c.php:442" class="tracy-editor">.../<b>Container_bc6707862c.php</b>:442</a>					
+					<a data-tracy-ref="^p + .file" class="tracy-toggle">source</a>&nbsp; 
+					<b>Nette\Http\Response-&gt;</b><b>setHeader</b> (<a data-tracy-ref="^p + .args" class="tracy-toggle tracy-collapsed">arguments</a>)
+					</p>
+
+											<div class="file"><pre title="Ctrl-Click to open in editor" data-tracy-href="editor://open/?file=%2Fvar%2Fwww%2Fhtml%2Ftemp%2Fcache%2Fnette.configurator%2FContainer_bc6707862c.php&amp;line=442&amp;search=&amp;replace=" class='code'><div><code><span style="color: #06B"><span style="color: #000"><span class='line'>432:</span>        </span><span style="color: #D24; font-weight: bold">{
+<span class='line'>433:</span>            return </span><span style="color: #000">Tracy</span><span style="color: #D24; font-weight: bold">\</span><span style="color: #000">Debugger</span><span style="color: #D24; font-weight: bold">::</span><span style="color: #000">getLogger</span><span style="color: #D24; font-weight: bold">();
+<span class='line'>434:</span>        }
+<span class='line'>435:</span>    
+<span class='line'>436:</span>    
+<span class='line'>437:</span>        public function </span><span style="color: #000">initialize</span><span style="color: #D24; font-weight: bold">()
+<span class='line'>438:</span>        {
+<span class='line'>439:</span>            </span><span style="color: #998; font-style: italic">// http.
+<span class='line'>440:</span>            </span><span style="color: #D24; font-weight: bold">(function () {
+<span class='line'>441:</span>                </span><span style="color: #000">$response </span><span style="color: #D24; font-weight: bold">= </span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">getService</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #080">'http.response'</span><span style="color: #D24; font-weight: bold">);
+<span class='highlight'>442:                $response-&gt;setHeader('X-Powered-By', 'Nette Framework 3');
+</span></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #080"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #080"></span><span style="color: #D24; font-weight: bold"><span class='line'>443:</span>                </span><span style="color: #000">$response</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">setHeader</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #080">'Content-Type'</span><span style="color: #D24; font-weight: bold">, </span><span style="color: #080">'text/html; charset=utf-8'</span><span style="color: #D24; font-weight: bold">);
+<span class='line'>444:</span>                </span><span style="color: #000">$response</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">setHeader</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #080">'X-Frame-Options'</span><span style="color: #D24; font-weight: bold">, </span><span style="color: #080">'SAMEORIGIN'</span><span style="color: #D24; font-weight: bold">);
+<span class='line'>445:</span>                </span><span style="color: #000">Nette</span><span style="color: #D24; font-weight: bold">\</span><span style="color: #000">Http</span><span style="color: #D24; font-weight: bold">\</span><span style="color: #000">Helpers</span><span style="color: #D24; font-weight: bold">::</span><span style="color: #000">initCookie</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">getService</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #080">'http.request'</span><span style="color: #D24; font-weight: bold">), </span><span style="color: #000">$response</span><span style="color: #D24; font-weight: bold">);
+<span class='line'>446:</span>            })();
+</span></span></code></div></pre></div>
+					
+					
+											<div class="tracy-collapsed outer args">
+						<table>
+						<tr><th>$name</th><td><pre class="tracy-dump tracy-light"
+><span class="tracy-dump-string" title="12 characters"><span>'</span>X-Powered-By<span>'</span></span></pre>
+</td></tr>
+<tr><th>$value</th><td><pre class="tracy-dump tracy-light"
+><span class="tracy-dump-string" title="17 characters"><span>'</span>Nette Framework 3<span>'</span></span></pre>
+</td></tr>
+						</table>
+						</div>
+										</li>
+										<li><p>
+
+											<a href="editor://open/?file=%2Fvar%2Fwww%2Fhtml%2Ftemp%2Fcache%2Fnette.configurator%2FContainer_bc6707862c.php&amp;line=446&amp;search=&amp;replace=" title="/var/www/html/temp/cache/nette.configurator/Container_bc6707862c.php:446" class="tracy-editor">.../<b>Container_bc6707862c.php</b>:446</a>					
+					<a data-tracy-ref="^p + .file" class="tracy-toggle tracy-collapsed">source</a>&nbsp; 
+					<b>Container_bc6707862c-&gt;</b><b>{closure}</b> ()
+					</p>
+
+											<div class="tracy-collapsed file"><pre title="Ctrl-Click to open in editor" data-tracy-href="editor://open/?file=%2Fvar%2Fwww%2Fhtml%2Ftemp%2Fcache%2Fnette.configurator%2FContainer_bc6707862c.php&amp;line=446&amp;search=&amp;replace=" class='code'><div><code><span style="color: #06B"><span style="color: #D24; font-weight: bold"><span class='line'>436:</span>    
+<span class='line'>437:</span>        public function </span><span style="color: #000">initialize</span><span style="color: #D24; font-weight: bold">()
+<span class='line'>438:</span>        {
+<span class='line'>439:</span>            </span><span style="color: #998; font-style: italic">// http.
+<span class='line'>440:</span>            </span><span style="color: #D24; font-weight: bold">(function () {
+<span class='line'>441:</span>                </span><span style="color: #000">$response </span><span style="color: #D24; font-weight: bold">= </span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">getService</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #080">'http.response'</span><span style="color: #D24; font-weight: bold">);
+<span class='line'>442:</span>                </span><span style="color: #000">$response</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">setHeader</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #080">'X-Powered-By'</span><span style="color: #D24; font-weight: bold">, </span><span style="color: #080">'Nette Framework 3'</span><span style="color: #D24; font-weight: bold">);
+<span class='line'>443:</span>                </span><span style="color: #000">$response</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">setHeader</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #080">'Content-Type'</span><span style="color: #D24; font-weight: bold">, </span><span style="color: #080">'text/html; charset=utf-8'</span><span style="color: #D24; font-weight: bold">);
+<span class='line'>444:</span>                </span><span style="color: #000">$response</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">setHeader</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #080">'X-Frame-Options'</span><span style="color: #D24; font-weight: bold">, </span><span style="color: #080">'SAMEORIGIN'</span><span style="color: #D24; font-weight: bold">);
+<span class='line'>445:</span>                </span><span style="color: #000">Nette</span><span style="color: #D24; font-weight: bold">\</span><span style="color: #000">Http</span><span style="color: #D24; font-weight: bold">\</span><span style="color: #000">Helpers</span><span style="color: #D24; font-weight: bold">::</span><span style="color: #000">initCookie</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">getService</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #080">'http.request'</span><span style="color: #D24; font-weight: bold">), </span><span style="color: #000">$response</span><span style="color: #D24; font-weight: bold">);
+<span class='highlight'>446:            })();
+</span><span class='line'>447:</span>            </span><span style="color: #998; font-style: italic">// session.
+<span class='line'>448:</span>            </span><span style="color: #D24; font-weight: bold">(function () {
+<span class='line'>449:</span>                </span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">getService</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #080">'session.session'</span><span style="color: #D24; font-weight: bold">)-&gt;</span><span style="color: #000">exists</span><span style="color: #D24; font-weight: bold">() &amp;&amp; </span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">getService</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #080">'session.session'</span><span style="color: #D24; font-weight: bold">)-&gt;</span><span style="color: #000">start</span><span style="color: #D24; font-weight: bold">();
+<span class='line'>450:</span>            })();
+</span></span></code></div></pre></div>
+					
+					
+										</li>
+										<li><p>
+
+											<a href="editor://open/?file=%2Fvar%2Fwww%2Fhtml%2Fvendor%2Fnette%2Fbootstrap%2Fsrc%2FBootstrap%2FConfigurator.php&amp;line=257&amp;search=&amp;replace=" title="/var/www/html/vendor/nette/bootstrap/src/Bootstrap/Configurator.php:257" class="tracy-editor">.../bootstrap/src/Bootstrap/<b>Configurator.php</b>:257</a>					
+					<a data-tracy-ref="^p + .file" class="tracy-toggle tracy-collapsed">source</a>&nbsp; 
+					<b>Container_bc6707862c-&gt;</b><b>initialize</b> ()
+					</p>
+
+											<div class="tracy-collapsed file"><pre title="Ctrl-Click to open in editor" data-tracy-href="editor://open/?file=%2Fvar%2Fwww%2Fhtml%2Fvendor%2Fnette%2Fbootstrap%2Fsrc%2FBootstrap%2FConfigurator.php&amp;line=257&amp;search=&amp;replace=" class='code'><div><code><span style="color: #06B"><span style="color: #D24; font-weight: bold"><span class='line'>247:</span>        </span><span style="color: #998; font-style: italic">/**
+<span class='line'>248:</span>         * Returns system DI container.
+<span class='line'>249:</span>         */
+<span class='line'>250:</span>        </span><span style="color: #D24; font-weight: bold">public function </span><span style="color: #000">createContainer</span><span style="color: #D24; font-weight: bold">(): </span><span style="color: #000">DI</span><span style="color: #D24; font-weight: bold">\</span><span style="color: #000">Container
+<span class='line'>251:</span>        </span><span style="color: #D24; font-weight: bold">{
+<span class='line'>252:</span>            </span><span style="color: #000">$class </span><span style="color: #D24; font-weight: bold">= </span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">loadContainer</span><span style="color: #D24; font-weight: bold">();
+<span class='line'>253:</span>            </span><span style="color: #000">$container </span><span style="color: #D24; font-weight: bold">= new </span><span style="color: #000">$class</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">dynamicParameters</span><span style="color: #D24; font-weight: bold">);
+<span class='line'>254:</span>            foreach (</span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">services </span><span style="color: #D24; font-weight: bold">as </span><span style="color: #000">$name </span><span style="color: #D24; font-weight: bold">=&gt; </span><span style="color: #000">$service</span><span style="color: #D24; font-weight: bold">) {
+<span class='line'>255:</span>                </span><span style="color: #000">$container</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">addService</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$name</span><span style="color: #D24; font-weight: bold">, </span><span style="color: #000">$service</span><span style="color: #D24; font-weight: bold">);
+<span class='line'>256:</span>            }
+<span class='highlight'>257:            $container-&gt;initialize();
+</span></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"><span class='line'>258:</span>            return </span><span style="color: #000">$container</span><span style="color: #D24; font-weight: bold">;
+<span class='line'>259:</span>        }
+<span class='line'>260:</span>    
+<span class='line'>261:</span>    
+</span></span></code></div></pre></div>
+					
+					
+										</li>
+										<li><p>
+
+											<a href="editor://open/?file=%2Fvar%2Fwww%2Fhtml%2Fwww%2Findex.php&amp;line=8&amp;search=&amp;replace=" title="/var/www/html/www/index.php:8" class="tracy-editor">/var/www/html/www/<b>index.php</b>:8</a>					
+					<a data-tracy-ref="^p + .file" class="tracy-toggle tracy-collapsed">source</a>&nbsp; 
+					<b>Nette\Bootstrap\Configurator-&gt;</b><b>createContainer</b> ()
+					</p>
+
+											<div class="tracy-collapsed file"><pre title="Ctrl-Click to open in editor" data-tracy-href="editor://open/?file=%2Fvar%2Fwww%2Fhtml%2Fwww%2Findex.php&amp;line=8&amp;search=&amp;replace=" class='code'><div><code><span style="color: #06B"><span class='line'> 1:</span>    <span style="color: #000">&lt;?php
+<span class='line'> 2:</span>    
+<span class='line'> 3:</span>    </span><span style="color: #D24; font-weight: bold">declare(</span><span style="color: #000">strict_types</span><span style="color: #D24; font-weight: bold">=</span><span style="color: #000">1</span><span style="color: #D24; font-weight: bold">);
+<span class='line'> 4:</span>    echo </span><span style="color: #080">"Ahoj"</span><span style="color: #D24; font-weight: bold">;
+<span class='line'> 5:</span>    require </span><span style="color: #000">__DIR__ </span><span style="color: #D24; font-weight: bold">. </span><span style="color: #080">'/../vendor/autoload.php'</span><span style="color: #D24; font-weight: bold">;
+<span class='line'> 6:</span>    
+<span class='line'> 7:</span>    </span><span style="color: #000">$configurator </span><span style="color: #D24; font-weight: bold">= </span><span style="color: #000">App</span><span style="color: #D24; font-weight: bold">\</span><span style="color: #000">Bootstrap</span><span style="color: #D24; font-weight: bold">::</span><span style="color: #000">boot</span><span style="color: #D24; font-weight: bold">();
+<span class='highlight'> 8:    $container = $configurator-&gt;createContainer();
+</span></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"><span class='line'> 9:</span>    </span><span style="color: #000">$application </span><span style="color: #D24; font-weight: bold">= </span><span style="color: #000">$container</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">getByType</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">Nette</span><span style="color: #D24; font-weight: bold">\</span><span style="color: #000">Application</span><span style="color: #D24; font-weight: bold">\</span><span style="color: #000">Application</span><span style="color: #D24; font-weight: bold">::class);
+<span class='line'>10:</span>    </span><span style="color: #000">$application</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">run</span><span style="color: #D24; font-weight: bold">();
+<span class='line'>11:</span>    </span>
+</span></code></div></pre></div>
+					
+					
+										</li>
+									</ol>
+			</div></div>
+			
+
+			
+				
+
+		
+
+		
+
+				
+
+				<div class="panel">
+		<h2><a data-tracy-ref="^+" class="tracy-toggle tracy-collapsed">Environment</a></h2>
+
+		<div class="tracy-collapsed inner">
+			<h3><a data-tracy-ref="^+" class="tracy-toggle">$_SERVER</a></h3>
+			<div class="outer">
+			<table class="tracy-sortable">
+			<tr><th>HTTP_HOST</th><td><pre class="tracy-dump tracy-light"
+><span class="tracy-dump-string" title="14 characters"><span>'</span>127.0.0.1:8000<span>'</span></span></pre>
+</td></tr>
+<tr><th>HTTP_ACCEPT</th><td><pre class="tracy-dump tracy-light"
+><span class="tracy-dump-string" title="63 characters"><span>'</span>text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8<span>'</span></span></pre>
+</td></tr>
+<tr><th>HTTP_UPGRADE_INSECURE_REQUESTS</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string"><span>'</span>1<span>'</span></span></pre>
+</td></tr>
+<tr><th>HTTP_COOKIE</th><td><pre class="tracy-dump tracy-light" data-tracy-dump='{"string":"_nss=1; adminer_permanent=c2VydmVy-ZGI%3D-cm9vdA%3D%3D-%3AVWvMiVyTTN437nVg; adminer_sid=f65c8d2b48d97209d2d0eeb1f6634734; adminer_key=bccd9fdc7cbb9083 <span>…</span> sion=4.8.0","length":225}'></pre>
+</td></tr>
+<tr><th>HTTP_USER_AGENT</th><td><pre class="tracy-dump tracy-light"
+><span class="tracy-dump-string" title="119 characters"><span>'</span>Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15<span>'</span></span></pre>
+</td></tr>
+<tr><th>HTTP_ACCEPT_LANGUAGE</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string" title="5 characters"><span>'</span>cs-cz<span>'</span></span></pre>
+</td></tr>
+<tr><th>HTTP_ACCEPT_ENCODING</th><td><pre class="tracy-dump tracy-light"
+><span class="tracy-dump-string" title="13 characters"><span>'</span>gzip, deflate<span>'</span></span></pre>
+</td></tr>
+<tr><th>HTTP_CONNECTION</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string" title="10 characters"><span>'</span>keep-alive<span>'</span></span></pre>
+</td></tr>
+<tr><th>PATH</th><td><pre class="tracy-dump tracy-light"
+><span class="tracy-dump-string" title="60 characters"><span>'</span>/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin<span>'</span></span></pre>
+</td></tr>
+<tr><th>SERVER_SIGNATURE</th><td><pre class="tracy-dump tracy-light" data-tracy-dump='{"string":"\u0026lt;address>Apache/2.4.38 (Debian) Server at 127.0.0.1 Port 8000\u0026lt;/address><i>\\n</i>","length":72}'></pre>
+</td></tr>
+<tr><th>SERVER_SOFTWARE</th><td><pre class="tracy-dump tracy-light"
+><span class="tracy-dump-string" title="22 characters"><span>'</span>Apache/2.4.38 (Debian)<span>'</span></span></pre>
+</td></tr>
+<tr><th>SERVER_NAME</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string" title="9 characters"><span>'</span>127.0.0.1<span>'</span></span></pre>
+</td></tr>
+<tr><th>SERVER_ADDR</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string" title="10 characters"><span>'</span>172.24.0.4<span>'</span></span></pre>
+</td></tr>
+<tr><th>SERVER_PORT</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string" title="4 characters"><span>'</span>8000<span>'</span></span></pre>
+</td></tr>
+<tr><th>REMOTE_ADDR</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string" title="10 characters"><span>'</span>172.24.0.1<span>'</span></span></pre>
+</td></tr>
+<tr><th>DOCUMENT_ROOT</th><td><pre class="tracy-dump tracy-light"
+><span class="tracy-dump-string" title="13 characters"><span>'</span>/var/www/html<span>'</span></span></pre>
+</td></tr>
+<tr><th>REQUEST_SCHEME</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string" title="4 characters"><span>'</span>http<span>'</span></span></pre>
+</td></tr>
+<tr><th>CONTEXT_PREFIX</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string"><span>'</span><span>'</span></span></pre>
+</td></tr>
+<tr><th>CONTEXT_DOCUMENT_ROOT</th><td><pre class="tracy-dump tracy-light"
+><span class="tracy-dump-string" title="13 characters"><span>'</span>/var/www/html<span>'</span></span></pre>
+</td></tr>
+<tr><th>SERVER_ADMIN</th><td><pre class="tracy-dump tracy-light"
+><span class="tracy-dump-string" title="19 characters"><span>'</span>webmaster@localhost<span>'</span></span></pre>
+</td></tr>
+<tr><th>SCRIPT_FILENAME</th><td><pre class="tracy-dump tracy-light"
+><span class="tracy-dump-string" title="27 characters"><span>'</span>/var/www/html/www/index.php<span>'</span></span></pre>
+</td></tr>
+<tr><th>REMOTE_PORT</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string" title="5 characters"><span>'</span>60198<span>'</span></span></pre>
+</td></tr>
+<tr><th>GATEWAY_INTERFACE</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string" title="7 characters"><span>'</span>CGI/1.1<span>'</span></span></pre>
+</td></tr>
+<tr><th>SERVER_PROTOCOL</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string" title="8 characters"><span>'</span>HTTP/1.1<span>'</span></span></pre>
+</td></tr>
+<tr><th>REQUEST_METHOD</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string" title="3 characters"><span>'</span>GET<span>'</span></span></pre>
+</td></tr>
+<tr><th>QUERY_STRING</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string"><span>'</span><span>'</span></span></pre>
+</td></tr>
+<tr><th>REQUEST_URI</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string" title="5 characters"><span>'</span>/www/<span>'</span></span></pre>
+</td></tr>
+<tr><th>SCRIPT_NAME</th><td><pre class="tracy-dump tracy-light"
+><span class="tracy-dump-string" title="14 characters"><span>'</span>/www/index.php<span>'</span></span></pre>
+</td></tr>
+<tr><th>PHP_SELF</th><td><pre class="tracy-dump tracy-light"
+><span class="tracy-dump-string" title="14 characters"><span>'</span>/www/index.php<span>'</span></span></pre>
+</td></tr>
+<tr><th>REQUEST_TIME_FLOAT</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-number">1614434378.45</span></pre>
+</td></tr>
+<tr><th>REQUEST_TIME</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-number">1614434378</span></pre>
+</td></tr>
+<tr><th>argv</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-array">array</span> (0)</pre>
+</td></tr>
+<tr><th>argc</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-number">0</span></pre>
+</td></tr>
+			</table>
+			</div>
+
+
+			<h3><a data-tracy-ref="^+" class="tracy-toggle">$_SESSION</a></h3>
+			<div class="outer">
+						<p><i>empty</i></p>
+						</div>
+
+
+			
+
+			
+
+			<h3><a data-tracy-ref="^+" class="tracy-toggle tracy-collapsed">Configuration options</a></h3>
+			<div class="outer tracy-collapsed">
+			<div class="center">
+<hr />
+<h1>Configuration</h1>
+<h2><a name="module_apache2handler">apache2handler</a></h2>
+<table class="tracy-sortable">
+<tr><td class="e">Apache Version </td><td class="v">Apache/2.4.38 (Debian) </td></tr>
+<tr><td class="e">Apache API Version </td><td class="v">20120211 </td></tr>
+<tr><td class="e">Server Administrator </td><td class="v">webmaster@localhost </td></tr>
+<tr><td class="e">Hostname:Port </td><td class="v">172.24.0.4:80 </td></tr>
+<tr><td class="e">User/Group </td><td class="v">www-data(33)/33 </td></tr>
+<tr><td class="e">Max Requests </td><td class="v">Per Child: 0 - Keep Alive: on - Max Per Connection: 100 </td></tr>
+<tr><td class="e">Timeouts </td><td class="v">Connection: 300 - Keep-Alive: 5 </td></tr>
+<tr><td class="e">Virtual Server </td><td class="v">Yes </td></tr>
+<tr><td class="e">Server Root </td><td class="v">/etc/apache2 </td></tr>
+<tr><td class="e">Loaded Modules </td><td class="v">core mod_so mod_watchdog http_core mod_log_config mod_logio mod_version mod_unixd mod_access_compat mod_alias mod_auth_basic mod_authn_core mod_authn_file mod_authz_core mod_authz_host mod_authz_user mod_autoindex mod_deflate mod_dir mod_env mod_filter mod_mime prefork mod_negotiation mod_php7 mod_reqtimeout mod_rewrite mod_setenvif mod_status </td></tr>
+</table>
+<table class="tracy-sortable">
+<tr class="h"><th>Directive</th><th>Local Value</th><th>Master Value</th></tr>
+<tr><td class="e">engine</td><td class="v">1</td><td class="v">1</td></tr>
+<tr><td class="e">last_modified</td><td class="v">0</td><td class="v">0</td></tr>
+<tr><td class="e">xbithack</td><td class="v">0</td><td class="v">0</td></tr>
+</table>
+<h2>Apache Environment</h2>
+<table class="tracy-sortable">
+<tr class="h"><th>Variable</th><th>Value</th></tr>
+<tr><td class="e">HTTP_HOST </td><td class="v">127.0.0.1:8000 </td></tr>
+<tr><td class="e">HTTP_ACCEPT </td><td class="v">text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 </td></tr>
+<tr><td class="e">HTTP_UPGRADE_INSECURE_REQUESTS </td><td class="v">1 </td></tr>
+<tr><td class="e">HTTP_COOKIE </td><td class="v">_nss=1; adminer_permanent=c2VydmVy-ZGI%3D-cm9vdA%3D%3D-%3AVWvMiVyTTN437nVg; adminer_sid=f65c8d2b48d97209d2d0eeb1f6634734; adminer_key=bccd9fdc7cbb908337feb55707582caf; adminer_engine=; adminer_settings=; adminer_version=4.8.0 </td></tr>
+<tr><td class="e">HTTP_USER_AGENT </td><td class="v">Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15 </td></tr>
+<tr><td class="e">HTTP_ACCEPT_LANGUAGE </td><td class="v">cs-cz </td></tr>
+<tr><td class="e">HTTP_ACCEPT_ENCODING </td><td class="v">gzip, deflate </td></tr>
+<tr><td class="e">HTTP_CONNECTION </td><td class="v">keep-alive </td></tr>
+<tr><td class="e">PATH </td><td class="v">/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin </td></tr>
+<tr><td class="e">SERVER_SIGNATURE </td><td class="v">&lt;address&gt;Apache/2.4.38 (Debian) Server at 127.0.0.1 Port 8000&lt;/address&gt;
+ </td></tr>
+<tr><td class="e">SERVER_SOFTWARE </td><td class="v">Apache/2.4.38 (Debian) </td></tr>
+<tr><td class="e">SERVER_NAME </td><td class="v">127.0.0.1 </td></tr>
+<tr><td class="e">SERVER_ADDR </td><td class="v">172.24.0.4 </td></tr>
+<tr><td class="e">SERVER_PORT </td><td class="v">8000 </td></tr>
+<tr><td class="e">REMOTE_ADDR </td><td class="v">172.24.0.1 </td></tr>
+<tr><td class="e">DOCUMENT_ROOT </td><td class="v">/var/www/html </td></tr>
+<tr><td class="e">REQUEST_SCHEME </td><td class="v">http </td></tr>
+<tr><td class="e">CONTEXT_PREFIX </td><td class="v"><i>no value</i> </td></tr>
+<tr><td class="e">CONTEXT_DOCUMENT_ROOT </td><td class="v">/var/www/html </td></tr>
+<tr><td class="e">SERVER_ADMIN </td><td class="v">webmaster@localhost </td></tr>
+<tr><td class="e">SCRIPT_FILENAME </td><td class="v">/var/www/html/www/index.php </td></tr>
+<tr><td class="e">REMOTE_PORT </td><td class="v">60198 </td></tr>
+<tr><td class="e">GATEWAY_INTERFACE </td><td class="v">CGI/1.1 </td></tr>
+<tr><td class="e">SERVER_PROTOCOL </td><td class="v">HTTP/1.1 </td></tr>
+<tr><td class="e">REQUEST_METHOD </td><td class="v">GET </td></tr>
+<tr><td class="e">QUERY_STRING </td><td class="v"><i>no value</i> </td></tr>
+<tr><td class="e">REQUEST_URI </td><td class="v">/www/ </td></tr>
+<tr><td class="e">SCRIPT_NAME </td><td class="v">/www/index.php </td></tr>
+</table>
+<h2>HTTP Headers Information</h2>
+<table class="tracy-sortable">
+<tr class="h"><th colspan="2">HTTP Request Headers</th></tr>
+<tr><td class="e">HTTP Request </td><td class="v">GET /www/ HTTP/1.1 </td></tr>
+<tr><td class="e">Host </td><td class="v">127.0.0.1:8000 </td></tr>
+<tr><td class="e">Accept </td><td class="v">text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 </td></tr>
+<tr><td class="e">Upgrade-Insecure-Requests </td><td class="v">1 </td></tr>
+<tr><td class="e">Cookie </td><td class="v">_nss=1; adminer_permanent=c2VydmVy-ZGI%3D-cm9vdA%3D%3D-%3AVWvMiVyTTN437nVg; adminer_sid=f65c8d2b48d97209d2d0eeb1f6634734; adminer_key=bccd9fdc7cbb908337feb55707582caf; adminer_engine=; adminer_settings=; adminer_version=4.8.0 </td></tr>
+<tr><td class="e">User-Agent </td><td class="v">Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15 </td></tr>
+<tr><td class="e">Accept-Language </td><td class="v">cs-cz </td></tr>
+<tr><td class="e">Accept-Encoding </td><td class="v">gzip, deflate </td></tr>
+<tr><td class="e">Connection </td><td class="v">keep-alive </td></tr>
+<tr class="h"><th colspan="2">HTTP Response Headers</th></tr>
+<tr><td class="e">X-Powered-By </td><td class="v">PHP/7.2.34 </td></tr>
+</table>
+<h2><a name="module_core">Core</a></h2>
+<table class="tracy-sortable">
+<tr><td class="e">PHP Version </td><td class="v">7.2.34 </td></tr>
+</table>
+<table class="tracy-sortable">
+<tr class="h"><th>Directive</th><th>Local Value</th><th>Master Value</th></tr>
+<tr><td class="e">allow_url_fopen</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">allow_url_include</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">arg_separator.input</td><td class="v">&amp;</td><td class="v">&amp;</td></tr>
+<tr><td class="e">arg_separator.output</td><td class="v">&amp;</td><td class="v">&amp;</td></tr>
+<tr><td class="e">auto_append_file</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">auto_globals_jit</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">auto_prepend_file</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">browscap</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">default_charset</td><td class="v">UTF-8</td><td class="v">UTF-8</td></tr>
+<tr><td class="e">default_mimetype</td><td class="v">text/html</td><td class="v">text/html</td></tr>
+<tr><td class="e">disable_classes</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">disable_functions</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">display_errors</td><td class="v">Off</td><td class="v">On</td></tr>
+<tr><td class="e">display_startup_errors</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">doc_root</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">docref_ext</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">docref_root</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">enable_dl</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">enable_post_data_reading</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">error_append_string</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">error_log</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">error_prepend_string</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">error_reporting</td><td class="v">32767</td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">expose_php</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">extension_dir</td><td class="v">/usr/local/lib/php/extensions/no-debug-non-zts-20170718</td><td class="v">/usr/local/lib/php/extensions/no-debug-non-zts-20170718</td></tr>
+<tr><td class="e">file_uploads</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">hard_timeout</td><td class="v">2</td><td class="v">2</td></tr>
+<tr><td class="e">highlight.comment</td><td class="v"><font style="color: #998; font-style: italic">#998; font-style: italic</font></td><td class="v"><font style="color: #FF8000">#FF8000</font></td></tr>
+<tr><td class="e">highlight.default</td><td class="v"><font style="color: #000">#000</font></td><td class="v"><font style="color: #0000BB">#0000BB</font></td></tr>
+<tr><td class="e">highlight.html</td><td class="v"><font style="color: #06B">#06B</font></td><td class="v"><font style="color: #000000">#000000</font></td></tr>
+<tr><td class="e">highlight.keyword</td><td class="v"><font style="color: #D24; font-weight: bold">#D24; font-weight: bold</font></td><td class="v"><font style="color: #007700">#007700</font></td></tr>
+<tr><td class="e">highlight.string</td><td class="v"><font style="color: #080">#080</font></td><td class="v"><font style="color: #DD0000">#DD0000</font></td></tr>
+<tr><td class="e">html_errors</td><td class="v">Off</td><td class="v">On</td></tr>
+<tr><td class="e">ignore_repeated_errors</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">ignore_repeated_source</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">ignore_user_abort</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">implicit_flush</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">include_path</td><td class="v">.:/usr/local/lib/php</td><td class="v">.:/usr/local/lib/php</td></tr>
+<tr><td class="e">input_encoding</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">internal_encoding</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">log_errors</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">log_errors_max_len</td><td class="v">1024</td><td class="v">1024</td></tr>
+<tr><td class="e">mail.add_x_header</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">mail.force_extra_parameters</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">mail.log</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">max_execution_time</td><td class="v">30</td><td class="v">30</td></tr>
+<tr><td class="e">max_file_uploads</td><td class="v">20</td><td class="v">20</td></tr>
+<tr><td class="e">max_input_nesting_level</td><td class="v">64</td><td class="v">64</td></tr>
+<tr><td class="e">max_input_time</td><td class="v">-1</td><td class="v">-1</td></tr>
+<tr><td class="e">max_input_vars</td><td class="v">1000</td><td class="v">1000</td></tr>
+<tr><td class="e">memory_limit</td><td class="v">128M</td><td class="v">128M</td></tr>
+<tr><td class="e">open_basedir</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">output_buffering</td><td class="v">0</td><td class="v">0</td></tr>
+<tr><td class="e">output_encoding</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">output_handler</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">post_max_size</td><td class="v">8M</td><td class="v">8M</td></tr>
+<tr><td class="e">precision</td><td class="v">14</td><td class="v">14</td></tr>
+<tr><td class="e">realpath_cache_size</td><td class="v">4096K</td><td class="v">4096K</td></tr>
+<tr><td class="e">realpath_cache_ttl</td><td class="v">120</td><td class="v">120</td></tr>
+<tr><td class="e">register_argc_argv</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">report_memleaks</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">report_zend_debug</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">request_order</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">sendmail_from</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">sendmail_path</td><td class="v">&nbsp;-t&nbsp;-i&nbsp;</td><td class="v">&nbsp;-t&nbsp;-i&nbsp;</td></tr>
+<tr><td class="e">serialize_precision</td><td class="v">-1</td><td class="v">-1</td></tr>
+<tr><td class="e">short_open_tag</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">SMTP</td><td class="v">localhost</td><td class="v">localhost</td></tr>
+<tr><td class="e">smtp_port</td><td class="v">25</td><td class="v">25</td></tr>
+<tr><td class="e">sys_temp_dir</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">track_errors</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">unserialize_callback_func</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">upload_max_filesize</td><td class="v">2M</td><td class="v">2M</td></tr>
+<tr><td class="e">upload_tmp_dir</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">user_dir</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">user_ini.cache_ttl</td><td class="v">300</td><td class="v">300</td></tr>
+<tr><td class="e">user_ini.filename</td><td class="v">.user.ini</td><td class="v">.user.ini</td></tr>
+<tr><td class="e">variables_order</td><td class="v">EGPCS</td><td class="v">EGPCS</td></tr>
+<tr><td class="e">xmlrpc_error_number</td><td class="v">0</td><td class="v">0</td></tr>
+<tr><td class="e">xmlrpc_errors</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">zend.assertions</td><td class="v">1</td><td class="v">1</td></tr>
+<tr><td class="e">zend.detect_unicode</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">zend.enable_gc</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">zend.multibyte</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">zend.script_encoding</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">zend.signal_check</td><td class="v">Off</td><td class="v">Off</td></tr>
+</table>
+<h2><a name="module_ctype">ctype</a></h2>
+<table class="tracy-sortable">
+<tr><td class="e">ctype functions </td><td class="v">enabled </td></tr>
+</table>
+<h2><a name="module_curl">curl</a></h2>
+<table class="tracy-sortable">
+<tr><td class="e">cURL support </td><td class="v">enabled </td></tr>
+<tr><td class="e">cURL Information </td><td class="v">7.64.0 </td></tr>
+<tr><td class="e">Age </td><td class="v">4 </td></tr>
+<tr><td class="e">Features </td></tr>
+<tr><td class="e">AsynchDNS </td><td class="v">Yes </td></tr>
+<tr><td class="e">CharConv </td><td class="v">No </td></tr>
+<tr><td class="e">Debug </td><td class="v">No </td></tr>
+<tr><td class="e">GSS-Negotiate </td><td class="v">No </td></tr>
+<tr><td class="e">IDN </td><td class="v">Yes </td></tr>
+<tr><td class="e">IPv6 </td><td class="v">Yes </td></tr>
+<tr><td class="e">krb4 </td><td class="v">No </td></tr>
+<tr><td class="e">Largefile </td><td class="v">Yes </td></tr>
+<tr><td class="e">libz </td><td class="v">Yes </td></tr>
+<tr><td class="e">NTLM </td><td class="v">Yes </td></tr>
+<tr><td class="e">NTLMWB </td><td class="v">Yes </td></tr>
+<tr><td class="e">SPNEGO </td><td class="v">Yes </td></tr>
+<tr><td class="e">SSL </td><td class="v">Yes </td></tr>
+<tr><td class="e">SSPI </td><td class="v">No </td></tr>
+<tr><td class="e">TLS-SRP </td><td class="v">Yes </td></tr>
+<tr><td class="e">HTTP2 </td><td class="v">Yes </td></tr>
+<tr><td class="e">GSSAPI </td><td class="v">Yes </td></tr>
+<tr><td class="e">KERBEROS5 </td><td class="v">Yes </td></tr>
+<tr><td class="e">UNIX_SOCKETS </td><td class="v">Yes </td></tr>
+<tr><td class="e">PSL </td><td class="v">Yes </td></tr>
+<tr><td class="e">Protocols </td><td class="v">dict, file, ftp, ftps, gopher, http, https, imap, imaps, ldap, ldaps, pop3, pop3s, rtmp, rtsp, scp, sftp, smb, smbs, smtp, smtps, telnet, tftp </td></tr>
+<tr><td class="e">Host </td><td class="v">x86_64-pc-linux-gnu </td></tr>
+<tr><td class="e">SSL Version </td><td class="v">OpenSSL/1.1.1d </td></tr>
+<tr><td class="e">ZLib Version </td><td class="v">1.2.11 </td></tr>
+<tr><td class="e">libSSH Version </td><td class="v">libssh2/1.8.0 </td></tr>
+</table>
+<h2><a name="module_date">date</a></h2>
+<table class="tracy-sortable">
+<tr><td class="e">date/time support </td><td class="v">enabled </td></tr>
+<tr><td class="e">timelib version </td><td class="v">2017.09 </td></tr>
+<tr><td class="e">&quot;Olson&quot; Timezone Database Version </td><td class="v">2018.9 </td></tr>
+<tr><td class="e">Timezone Database </td><td class="v">internal </td></tr>
+<tr><td class="e">Default timezone </td><td class="v">Europe/Prague </td></tr>
+</table>
+<table class="tracy-sortable">
+<tr class="h"><th>Directive</th><th>Local Value</th><th>Master Value</th></tr>
+<tr><td class="e">date.default_latitude</td><td class="v">31.7667</td><td class="v">31.7667</td></tr>
+<tr><td class="e">date.default_longitude</td><td class="v">35.2333</td><td class="v">35.2333</td></tr>
+<tr><td class="e">date.sunrise_zenith</td><td class="v">90.583333</td><td class="v">90.583333</td></tr>
+<tr><td class="e">date.sunset_zenith</td><td class="v">90.583333</td><td class="v">90.583333</td></tr>
+<tr><td class="e">date.timezone</td><td class="v">Europe/Prague</td><td class="v"><i>no value</i></td></tr>
+</table>
+<h2><a name="module_dom">dom</a></h2>
+<table class="tracy-sortable">
+<tr><td class="e">DOM/XML </td><td class="v">enabled </td></tr>
+<tr><td class="e">DOM/XML API Version </td><td class="v">20031129 </td></tr>
+<tr><td class="e">libxml Version </td><td class="v">2.9.4 </td></tr>
+<tr><td class="e">HTML Support </td><td class="v">enabled </td></tr>
+<tr><td class="e">XPath Support </td><td class="v">enabled </td></tr>
+<tr><td class="e">XPointer Support </td><td class="v">enabled </td></tr>
+<tr><td class="e">Schema Support </td><td class="v">enabled </td></tr>
+<tr><td class="e">RelaxNG Support </td><td class="v">enabled </td></tr>
+</table>
+<h2><a name="module_fileinfo">fileinfo</a></h2>
+<table class="tracy-sortable">
+<tr><td class="e">fileinfo support </td><td class="v">enabled </td></tr>
+<tr><td class="e">version </td><td class="v">1.0.5 </td></tr>
+<tr><td class="e">libmagic </td><td class="v">531 </td></tr>
+</table>
+<h2><a name="module_filter">filter</a></h2>
+<table class="tracy-sortable">
+<tr><td class="e">Input Validation and Filtering </td><td class="v">enabled </td></tr>
+<tr><td class="e">Revision </td><td class="v">$Id: 5a34caaa246b9df197f4b43af8ac66a07464fe4b $ </td></tr>
+</table>
+<table class="tracy-sortable">
+<tr class="h"><th>Directive</th><th>Local Value</th><th>Master Value</th></tr>
+<tr><td class="e">filter.default</td><td class="v">unsafe_raw</td><td class="v">unsafe_raw</td></tr>
+<tr><td class="e">filter.default_flags</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+</table>
+<h2><a name="module_ftp">ftp</a></h2>
+<table class="tracy-sortable">
+<tr><td class="e">FTP support </td><td class="v">enabled </td></tr>
+<tr><td class="e">FTPS support </td><td class="v">enabled </td></tr>
+</table>
+<h2><a name="module_hash">hash</a></h2>
+<table class="tracy-sortable">
+<tr><td class="e">hash support </td><td class="v">enabled </td></tr>
+<tr><td class="e">Hashing Engines </td><td class="v">md2 md4 md5 sha1 sha224 sha256 sha384 sha512/224 sha512/256 sha512 sha3-224 sha3-256 sha3-384 sha3-512 ripemd128 ripemd160 ripemd256 ripemd320 whirlpool tiger128,3 tiger160,3 tiger192,3 tiger128,4 tiger160,4 tiger192,4 snefru snefru256 gost gost-crypto adler32 crc32 crc32b fnv132 fnv1a32 fnv164 fnv1a64 joaat haval128,3 haval160,3 haval192,3 haval224,3 haval256,3 haval128,4 haval160,4 haval192,4 haval224,4 haval256,4 haval128,5 haval160,5 haval192,5 haval224,5 haval256,5  </td></tr>
+</table>
+<table class="tracy-sortable">
+<tr><td class="e">MHASH support </td><td class="v">Enabled </td></tr>
+<tr><td class="e">MHASH API Version </td><td class="v">Emulated Support </td></tr>
+</table>
+<h2><a name="module_iconv">iconv</a></h2>
+<table class="tracy-sortable">
+<tr><td class="e">iconv support </td><td class="v">enabled </td></tr>
+<tr><td class="e">iconv implementation </td><td class="v">glibc </td></tr>
+<tr><td class="e">iconv library version </td><td class="v">2.28 </td></tr>
+</table>
+<table class="tracy-sortable">
+<tr class="h"><th>Directive</th><th>Local Value</th><th>Master Value</th></tr>
+<tr><td class="e">iconv.input_encoding</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">iconv.internal_encoding</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">iconv.output_encoding</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+</table>
+<h2><a name="module_json">json</a></h2>
+<table class="tracy-sortable">
+<tr><td class="e">json support </td><td class="v">enabled </td></tr>
+<tr><td class="e">json version </td><td class="v">1.6.0 </td></tr>
+</table>
+<h2><a name="module_libxml">libxml</a></h2>
+<table class="tracy-sortable">
+<tr><td class="e">libXML support </td><td class="v">active </td></tr>
+<tr><td class="e">libXML Compiled Version </td><td class="v">2.9.4 </td></tr>
+<tr><td class="e">libXML Loaded Version </td><td class="v">20904 </td></tr>
+<tr><td class="e">libXML streams </td><td class="v">enabled </td></tr>
+</table>
+<h2><a name="module_mbstring">mbstring</a></h2>
+<table class="tracy-sortable">
+<tr><td class="e">Multibyte Support </td><td class="v">enabled </td></tr>
+<tr><td class="e">Multibyte string engine </td><td class="v">libmbfl </td></tr>
+<tr><td class="e">HTTP input encoding translation </td><td class="v">disabled </td></tr>
+<tr><td class="e">libmbfl version </td><td class="v">1.3.2 </td></tr>
+<tr><td class="e">oniguruma version </td><td class="v">6.3.0 </td></tr>
+</table>
+<table class="tracy-sortable">
+<tr class="h"><th>mbstring extension makes use of "streamable kanji code filter and converter", which is distributed under the GNU Lesser General Public License version 2.1.</th></tr>
+</table>
+<table class="tracy-sortable">
+<tr><td class="e">Multibyte (japanese) regex support </td><td class="v">enabled </td></tr>
+<tr><td class="e">Multibyte regex (oniguruma) backtrack check </td><td class="v">On </td></tr>
+<tr><td class="e">Multibyte regex (oniguruma) version </td><td class="v">6.3.0 </td></tr>
+</table>
+<table class="tracy-sortable">
+<tr class="h"><th>Directive</th><th>Local Value</th><th>Master Value</th></tr>
+<tr><td class="e">mbstring.detect_order</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">mbstring.encoding_translation</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">mbstring.func_overload</td><td class="v">0</td><td class="v">0</td></tr>
+<tr><td class="e">mbstring.http_input</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">mbstring.http_output</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">mbstring.http_output_conv_mimetypes</td><td class="v">^(text/|application/xhtml\+xml)</td><td class="v">^(text/|application/xhtml\+xml)</td></tr>
+<tr><td class="e">mbstring.internal_encoding</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">mbstring.language</td><td class="v">neutral</td><td class="v">neutral</td></tr>
+<tr><td class="e">mbstring.strict_detection</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">mbstring.substitute_character</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+</table>
+<h2><a name="module_mysqli">mysqli</a></h2>
+<table class="tracy-sortable">
+<tr class="h"><th>MysqlI Support</th><th>enabled</th></tr>
+<tr><td class="e">Client API library version </td><td class="v">mysqlnd 5.0.12-dev - 20150407 - $Id: 3591daad22de08524295e1bd073aceeff11e6579 $ </td></tr>
+<tr><td class="e">Active Persistent Links </td><td class="v">0 </td></tr>
+<tr><td class="e">Inactive Persistent Links </td><td class="v">0 </td></tr>
+<tr><td class="e">Active Links </td><td class="v">0 </td></tr>
+</table>
+<table class="tracy-sortable">
+<tr class="h"><th>Directive</th><th>Local Value</th><th>Master Value</th></tr>
+<tr><td class="e">mysqli.allow_local_infile</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">mysqli.allow_persistent</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">mysqli.default_host</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">mysqli.default_port</td><td class="v">3306</td><td class="v">3306</td></tr>
+<tr><td class="e">mysqli.default_pw</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">mysqli.default_socket</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">mysqli.default_user</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">mysqli.max_links</td><td class="v">Unlimited</td><td class="v">Unlimited</td></tr>
+<tr><td class="e">mysqli.max_persistent</td><td class="v">Unlimited</td><td class="v">Unlimited</td></tr>
+<tr><td class="e">mysqli.reconnect</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">mysqli.rollback_on_cached_plink</td><td class="v">Off</td><td class="v">Off</td></tr>
+</table>
+<h2><a name="module_mysqlnd">mysqlnd</a></h2>
+<table class="tracy-sortable">
+<tr class="h"><th>mysqlnd</th><th>enabled</th></tr>
+<tr><td class="e">Version </td><td class="v">mysqlnd 5.0.12-dev - 20150407 - $Id: 3591daad22de08524295e1bd073aceeff11e6579 $ </td></tr>
+<tr><td class="e">Compression </td><td class="v">supported </td></tr>
+<tr><td class="e">core SSL </td><td class="v">supported </td></tr>
+<tr><td class="e">extended SSL </td><td class="v">supported </td></tr>
+<tr><td class="e">Command buffer size </td><td class="v">4096 </td></tr>
+<tr><td class="e">Read buffer size </td><td class="v">32768 </td></tr>
+<tr><td class="e">Read timeout </td><td class="v">86400 </td></tr>
+<tr><td class="e">Collecting statistics </td><td class="v">Yes </td></tr>
+<tr><td class="e">Collecting memory statistics </td><td class="v">No </td></tr>
+<tr><td class="e">Tracing </td><td class="v">n/a </td></tr>
+<tr><td class="e">Loaded plugins </td><td class="v">mysqlnd,debug_trace,auth_plugin_mysql_native_password,auth_plugin_mysql_clear_password,auth_plugin_sha256_password </td></tr>
+<tr><td class="e">API Extensions </td><td class="v">mysqli </td></tr>
+</table>
+<table class="tracy-sortable">
+<tr class="h"><th>mysqlnd statistics</th><th> </th></tr>
+<tr><td class="e">bytes_sent </td><td class="v">0 </td></tr>
+<tr><td class="e">bytes_received </td><td class="v">0 </td></tr>
+<tr><td class="e">packets_sent </td><td class="v">0 </td></tr>
+<tr><td class="e">packets_received </td><td class="v">0 </td></tr>
+<tr><td class="e">protocol_overhead_in </td><td class="v">0 </td></tr>
+<tr><td class="e">protocol_overhead_out </td><td class="v">0 </td></tr>
+<tr><td class="e">bytes_received_ok_packet </td><td class="v">0 </td></tr>
+<tr><td class="e">bytes_received_eof_packet </td><td class="v">0 </td></tr>
+<tr><td class="e">bytes_received_rset_header_packet </td><td class="v">0 </td></tr>
+<tr><td class="e">bytes_received_rset_field_meta_packet </td><td class="v">0 </td></tr>
+<tr><td class="e">bytes_received_rset_row_packet </td><td class="v">0 </td></tr>
+<tr><td class="e">bytes_received_prepare_response_packet </td><td class="v">0 </td></tr>
+<tr><td class="e">bytes_received_change_user_packet </td><td class="v">0 </td></tr>
+<tr><td class="e">packets_sent_command </td><td class="v">0 </td></tr>
+<tr><td class="e">packets_received_ok </td><td class="v">0 </td></tr>
+<tr><td class="e">packets_received_eof </td><td class="v">0 </td></tr>
+<tr><td class="e">packets_received_rset_header </td><td class="v">0 </td></tr>
+<tr><td class="e">packets_received_rset_field_meta </td><td class="v">0 </td></tr>
+<tr><td class="e">packets_received_rset_row </td><td class="v">0 </td></tr>
+<tr><td class="e">packets_received_prepare_response </td><td class="v">0 </td></tr>
+<tr><td class="e">packets_received_change_user </td><td class="v">0 </td></tr>
+<tr><td class="e">result_set_queries </td><td class="v">0 </td></tr>
+<tr><td class="e">non_result_set_queries </td><td class="v">0 </td></tr>
+<tr><td class="e">no_index_used </td><td class="v">0 </td></tr>
+<tr><td class="e">bad_index_used </td><td class="v">0 </td></tr>
+<tr><td class="e">slow_queries </td><td class="v">0 </td></tr>
+<tr><td class="e">buffered_sets </td><td class="v">0 </td></tr>
+<tr><td class="e">unbuffered_sets </td><td class="v">0 </td></tr>
+<tr><td class="e">ps_buffered_sets </td><td class="v">0 </td></tr>
+<tr><td class="e">ps_unbuffered_sets </td><td class="v">0 </td></tr>
+<tr><td class="e">flushed_normal_sets </td><td class="v">0 </td></tr>
+<tr><td class="e">flushed_ps_sets </td><td class="v">0 </td></tr>
+<tr><td class="e">ps_prepared_never_executed </td><td class="v">0 </td></tr>
+<tr><td class="e">ps_prepared_once_executed </td><td class="v">0 </td></tr>
+<tr><td class="e">rows_fetched_from_server_normal </td><td class="v">0 </td></tr>
+<tr><td class="e">rows_fetched_from_server_ps </td><td class="v">0 </td></tr>
+<tr><td class="e">rows_buffered_from_client_normal </td><td class="v">0 </td></tr>
+<tr><td class="e">rows_buffered_from_client_ps </td><td class="v">0 </td></tr>
+<tr><td class="e">rows_fetched_from_client_normal_buffered </td><td class="v">0 </td></tr>
+<tr><td class="e">rows_fetched_from_client_normal_unbuffered </td><td class="v">0 </td></tr>
+<tr><td class="e">rows_fetched_from_client_ps_buffered </td><td class="v">0 </td></tr>
+<tr><td class="e">rows_fetched_from_client_ps_unbuffered </td><td class="v">0 </td></tr>
+<tr><td class="e">rows_fetched_from_client_ps_cursor </td><td class="v">0 </td></tr>
+<tr><td class="e">rows_affected_normal </td><td class="v">0 </td></tr>
+<tr><td class="e">rows_affected_ps </td><td class="v">0 </td></tr>
+<tr><td class="e">rows_skipped_normal </td><td class="v">0 </td></tr>
+<tr><td class="e">rows_skipped_ps </td><td class="v">0 </td></tr>
+<tr><td class="e">copy_on_write_saved </td><td class="v">0 </td></tr>
+<tr><td class="e">copy_on_write_performed </td><td class="v">0 </td></tr>
+<tr><td class="e">command_buffer_too_small </td><td class="v">0 </td></tr>
+<tr><td class="e">connect_success </td><td class="v">0 </td></tr>
+<tr><td class="e">connect_failure </td><td class="v">0 </td></tr>
+<tr><td class="e">connection_reused </td><td class="v">0 </td></tr>
+<tr><td class="e">reconnect </td><td class="v">0 </td></tr>
+<tr><td class="e">pconnect_success </td><td class="v">0 </td></tr>
+<tr><td class="e">active_connections </td><td class="v">0 </td></tr>
+<tr><td class="e">active_persistent_connections </td><td class="v">0 </td></tr>
+<tr><td class="e">explicit_close </td><td class="v">0 </td></tr>
+<tr><td class="e">implicit_close </td><td class="v">0 </td></tr>
+<tr><td class="e">disconnect_close </td><td class="v">0 </td></tr>
+<tr><td class="e">in_middle_of_command_close </td><td class="v">0 </td></tr>
+<tr><td class="e">explicit_free_result </td><td class="v">0 </td></tr>
+<tr><td class="e">implicit_free_result </td><td class="v">0 </td></tr>
+<tr><td class="e">explicit_stmt_close </td><td class="v">0 </td></tr>
+<tr><td class="e">implicit_stmt_close </td><td class="v">0 </td></tr>
+<tr><td class="e">mem_emalloc_count </td><td class="v">0 </td></tr>
+<tr><td class="e">mem_emalloc_amount </td><td class="v">0 </td></tr>
+<tr><td class="e">mem_ecalloc_count </td><td class="v">0 </td></tr>
+<tr><td class="e">mem_ecalloc_amount </td><td class="v">0 </td></tr>
+<tr><td class="e">mem_erealloc_count </td><td class="v">0 </td></tr>
+<tr><td class="e">mem_erealloc_amount </td><td class="v">0 </td></tr>
+<tr><td class="e">mem_efree_count </td><td class="v">0 </td></tr>
+<tr><td class="e">mem_efree_amount </td><td class="v">0 </td></tr>
+<tr><td class="e">mem_malloc_count </td><td class="v">0 </td></tr>
+<tr><td class="e">mem_malloc_amount </td><td class="v">0 </td></tr>
+<tr><td class="e">mem_calloc_count </td><td class="v">0 </td></tr>
+<tr><td class="e">mem_calloc_amount </td><td class="v">0 </td></tr>
+<tr><td class="e">mem_realloc_count </td><td class="v">0 </td></tr>
+<tr><td class="e">mem_realloc_amount </td><td class="v">0 </td></tr>
+<tr><td class="e">mem_free_count </td><td class="v">0 </td></tr>
+<tr><td class="e">mem_free_amount </td><td class="v">0 </td></tr>
+<tr><td class="e">mem_estrndup_count </td><td class="v">0 </td></tr>
+<tr><td class="e">mem_strndup_count </td><td class="v">0 </td></tr>
+<tr><td class="e">mem_estrdup_count </td><td class="v">0 </td></tr>
+<tr><td class="e">mem_strdup_count </td><td class="v">0 </td></tr>
+<tr><td class="e">mem_edupl_count </td><td class="v">0 </td></tr>
+<tr><td class="e">mem_dupl_count </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_text_fetched_null </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_text_fetched_bit </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_text_fetched_tinyint </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_text_fetched_short </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_text_fetched_int24 </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_text_fetched_int </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_text_fetched_bigint </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_text_fetched_decimal </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_text_fetched_float </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_text_fetched_double </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_text_fetched_date </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_text_fetched_year </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_text_fetched_time </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_text_fetched_datetime </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_text_fetched_timestamp </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_text_fetched_string </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_text_fetched_blob </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_text_fetched_enum </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_text_fetched_set </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_text_fetched_geometry </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_text_fetched_other </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_binary_fetched_null </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_binary_fetched_bit </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_binary_fetched_tinyint </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_binary_fetched_short </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_binary_fetched_int24 </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_binary_fetched_int </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_binary_fetched_bigint </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_binary_fetched_decimal </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_binary_fetched_float </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_binary_fetched_double </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_binary_fetched_date </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_binary_fetched_year </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_binary_fetched_time </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_binary_fetched_datetime </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_binary_fetched_timestamp </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_binary_fetched_string </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_binary_fetched_json </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_binary_fetched_blob </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_binary_fetched_enum </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_binary_fetched_set </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_binary_fetched_geometry </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_binary_fetched_other </td><td class="v">0 </td></tr>
+<tr><td class="e">init_command_executed_count </td><td class="v">0 </td></tr>
+<tr><td class="e">init_command_failed_count </td><td class="v">0 </td></tr>
+<tr><td class="e">com_quit </td><td class="v">0 </td></tr>
+<tr><td class="e">com_init_db </td><td class="v">0 </td></tr>
+<tr><td class="e">com_query </td><td class="v">0 </td></tr>
+<tr><td class="e">com_field_list </td><td class="v">0 </td></tr>
+<tr><td class="e">com_create_db </td><td class="v">0 </td></tr>
+<tr><td class="e">com_drop_db </td><td class="v">0 </td></tr>
+<tr><td class="e">com_refresh </td><td class="v">0 </td></tr>
+<tr><td class="e">com_shutdown </td><td class="v">0 </td></tr>
+<tr><td class="e">com_statistics </td><td class="v">0 </td></tr>
+<tr><td class="e">com_process_info </td><td class="v">0 </td></tr>
+<tr><td class="e">com_connect </td><td class="v">0 </td></tr>
+<tr><td class="e">com_process_kill </td><td class="v">0 </td></tr>
+<tr><td class="e">com_debug </td><td class="v">0 </td></tr>
+<tr><td class="e">com_ping </td><td class="v">0 </td></tr>
+<tr><td class="e">com_time </td><td class="v">0 </td></tr>
+<tr><td class="e">com_delayed_insert </td><td class="v">0 </td></tr>
+<tr><td class="e">com_change_user </td><td class="v">0 </td></tr>
+<tr><td class="e">com_binlog_dump </td><td class="v">0 </td></tr>
+<tr><td class="e">com_table_dump </td><td class="v">0 </td></tr>
+<tr><td class="e">com_connect_out </td><td class="v">0 </td></tr>
+<tr><td class="e">com_register_slave </td><td class="v">0 </td></tr>
+<tr><td class="e">com_stmt_prepare </td><td class="v">0 </td></tr>
+<tr><td class="e">com_stmt_execute </td><td class="v">0 </td></tr>
+<tr><td class="e">com_stmt_send_long_data </td><td class="v">0 </td></tr>
+<tr><td class="e">com_stmt_close </td><td class="v">0 </td></tr>
+<tr><td class="e">com_stmt_reset </td><td class="v">0 </td></tr>
+<tr><td class="e">com_stmt_set_option </td><td class="v">0 </td></tr>
+<tr><td class="e">com_stmt_fetch </td><td class="v">0 </td></tr>
+<tr><td class="e">com_deamon </td><td class="v">0 </td></tr>
+<tr><td class="e">bytes_received_real_data_normal </td><td class="v">0 </td></tr>
+<tr><td class="e">bytes_received_real_data_ps </td><td class="v">0 </td></tr>
+</table>
+<h2><a name="module_openssl">openssl</a></h2>
+<table class="tracy-sortable">
+<tr><td class="e">OpenSSL support </td><td class="v">enabled </td></tr>
+<tr><td class="e">OpenSSL Library Version </td><td class="v">OpenSSL 1.1.1d  10 Sep 2019 </td></tr>
+<tr><td class="e">OpenSSL Header Version </td><td class="v">OpenSSL 1.1.1d  10 Sep 2019 </td></tr>
+<tr><td class="e">Openssl default config </td><td class="v">/usr/lib/ssl/openssl.cnf </td></tr>
+</table>
+<table class="tracy-sortable">
+<tr class="h"><th>Directive</th><th>Local Value</th><th>Master Value</th></tr>
+<tr><td class="e">openssl.cafile</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">openssl.capath</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+</table>
+<h2><a name="module_pcre">pcre</a></h2>
+<table class="tracy-sortable">
+<tr><td class="e">PCRE (Perl Compatible Regular Expressions) Support </td><td class="v">enabled </td></tr>
+<tr><td class="e">PCRE Library Version </td><td class="v">8.41 2017-07-05 </td></tr>
+<tr><td class="e">PCRE JIT Support </td><td class="v">enabled </td></tr>
+</table>
+<table class="tracy-sortable">
+<tr class="h"><th>Directive</th><th>Local Value</th><th>Master Value</th></tr>
+<tr><td class="e">pcre.backtrack_limit</td><td class="v">1000000</td><td class="v">1000000</td></tr>
+<tr><td class="e">pcre.jit</td><td class="v">1</td><td class="v">1</td></tr>
+<tr><td class="e">pcre.recursion_limit</td><td class="v">100000</td><td class="v">100000</td></tr>
+</table>
+<h2><a name="module_pdo">PDO</a></h2>
+<table class="tracy-sortable">
+<tr class="h"><th>PDO support</th><th>enabled</th></tr>
+<tr><td class="e">PDO drivers </td><td class="v">sqlite </td></tr>
+</table>
+<h2><a name="module_pdo_sqlite">pdo_sqlite</a></h2>
+<table class="tracy-sortable">
+<tr class="h"><th>PDO Driver for SQLite 3.x</th><th>enabled</th></tr>
+<tr><td class="e">SQLite Library </td><td class="v">3.27.2 </td></tr>
+</table>
+<h2><a name="module_phar">Phar</a></h2>
+<table class="tracy-sortable">
+<tr class="h"><th>Phar: PHP Archive support</th><th>enabled</th></tr>
+<tr><td class="e">Phar EXT version </td><td class="v">2.0.2 </td></tr>
+<tr><td class="e">Phar API version </td><td class="v">1.1.1 </td></tr>
+<tr><td class="e">SVN revision </td><td class="v">$Id: ba76a9b0e06d536a9b602c782e38e6826cb4ee02 $ </td></tr>
+<tr><td class="e">Phar-based phar archives </td><td class="v">enabled </td></tr>
+<tr><td class="e">Tar-based phar archives </td><td class="v">enabled </td></tr>
+<tr><td class="e">ZIP-based phar archives </td><td class="v">enabled </td></tr>
+<tr><td class="e">gzip compression </td><td class="v">enabled </td></tr>
+<tr><td class="e">bzip2 compression </td><td class="v">disabled (install pecl/bz2) </td></tr>
+<tr><td class="e">Native OpenSSL support </td><td class="v">enabled </td></tr>
+</table>
+<table class="tracy-sortable">
+<tr class="v"><td>
+Phar based on pear/PHP_Archive, original concept by Davey Shafik.<br />Phar fully realized by Gregory Beaver and Marcus Boerger.<br />Portions of tar implementation Copyright (c) 2003-2009 Tim Kientzle.</td></tr>
+</table>
+<table class="tracy-sortable">
+<tr class="h"><th>Directive</th><th>Local Value</th><th>Master Value</th></tr>
+<tr><td class="e">phar.cache_list</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">phar.readonly</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">phar.require_hash</td><td class="v">On</td><td class="v">On</td></tr>
+</table>
+<h2><a name="module_posix">posix</a></h2>
+<table class="tracy-sortable">
+<tr><td class="e">Revision </td><td class="v">$Id: 0a764bab332255746424a1e6cfbaaeebab998e4c $ </td></tr>
+</table>
+<h2><a name="module_reflection">Reflection</a></h2>
+<table class="tracy-sortable">
+<tr class="h"><th>Reflection</th><th>enabled</th></tr>
+<tr><td class="e">Version </td><td class="v">$Id: fe5f2178c6eb97631d3f8f03ceb9eddb88e664c7 $ </td></tr>
+</table>
+<h2><a name="module_session">session</a></h2>
+<table class="tracy-sortable">
+<tr><td class="e">Session Support </td><td class="v">enabled </td></tr>
+<tr><td class="e">Registered save handlers </td><td class="v">files user  </td></tr>
+<tr><td class="e">Registered serializer handlers </td><td class="v">php_serialize php php_binary  </td></tr>
+</table>
+<table class="tracy-sortable">
+<tr class="h"><th>Directive</th><th>Local Value</th><th>Master Value</th></tr>
+<tr><td class="e">session.auto_start</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">session.cache_expire</td><td class="v">180</td><td class="v">180</td></tr>
+<tr><td class="e">session.cache_limiter</td><td class="v">nocache</td><td class="v">nocache</td></tr>
+<tr><td class="e">session.cookie_domain</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">session.cookie_httponly</td><td class="v">0</td><td class="v">0</td></tr>
+<tr><td class="e">session.cookie_lifetime</td><td class="v">0</td><td class="v">0</td></tr>
+<tr><td class="e">session.cookie_path</td><td class="v">/</td><td class="v">/</td></tr>
+<tr><td class="e">session.cookie_secure</td><td class="v">0</td><td class="v">0</td></tr>
+<tr><td class="e">session.gc_divisor</td><td class="v">100</td><td class="v">100</td></tr>
+<tr><td class="e">session.gc_maxlifetime</td><td class="v">1440</td><td class="v">1440</td></tr>
+<tr><td class="e">session.gc_probability</td><td class="v">1</td><td class="v">1</td></tr>
+<tr><td class="e">session.lazy_write</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">session.name</td><td class="v">PHPSESSID</td><td class="v">PHPSESSID</td></tr>
+<tr><td class="e">session.referer_check</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">session.save_handler</td><td class="v">files</td><td class="v">files</td></tr>
+<tr><td class="e">session.save_path</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">session.serialize_handler</td><td class="v">php</td><td class="v">php</td></tr>
+<tr><td class="e">session.sid_bits_per_character</td><td class="v">4</td><td class="v">4</td></tr>
+<tr><td class="e">session.sid_length</td><td class="v">32</td><td class="v">32</td></tr>
+<tr><td class="e">session.upload_progress.cleanup</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">session.upload_progress.enabled</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">session.upload_progress.freq</td><td class="v">1%</td><td class="v">1%</td></tr>
+<tr><td class="e">session.upload_progress.min_freq</td><td class="v">1</td><td class="v">1</td></tr>
+<tr><td class="e">session.upload_progress.name</td><td class="v">PHP_SESSION_UPLOAD_PROGRESS</td><td class="v">PHP_SESSION_UPLOAD_PROGRESS</td></tr>
+<tr><td class="e">session.upload_progress.prefix</td><td class="v">upload_progress_</td><td class="v">upload_progress_</td></tr>
+<tr><td class="e">session.use_cookies</td><td class="v">1</td><td class="v">1</td></tr>
+<tr><td class="e">session.use_only_cookies</td><td class="v">1</td><td class="v">1</td></tr>
+<tr><td class="e">session.use_strict_mode</td><td class="v">0</td><td class="v">0</td></tr>
+<tr><td class="e">session.use_trans_sid</td><td class="v">0</td><td class="v">0</td></tr>
+</table>
+<h2><a name="module_simplexml">SimpleXML</a></h2>
+<table class="tracy-sortable">
+<tr class="h"><th>Simplexml support</th><th>enabled</th></tr>
+<tr><td class="e">Revision </td><td class="v">$Id: 341daed0ee94ea8f728bfd0ba4626e6ed365c0d1 $ </td></tr>
+<tr><td class="e">Schema support </td><td class="v">enabled </td></tr>
+</table>
+<h2><a name="module_sodium">sodium</a></h2>
+<table class="tracy-sortable">
+<tr class="h"><th>sodium support</th><th>enabled</th></tr>
+<tr><td class="e">libsodium headers version </td><td class="v">1.0.17 </td></tr>
+<tr><td class="e">libsodium library version </td><td class="v">1.0.17 </td></tr>
+</table>
+<h2><a name="module_spl">SPL</a></h2>
+<table class="tracy-sortable">
+<tr class="h"><th>SPL support</th><th>enabled</th></tr>
+<tr><td class="e">Interfaces </td><td class="v">OuterIterator, RecursiveIterator, SeekableIterator, SplObserver, SplSubject </td></tr>
+<tr><td class="e">Classes </td><td class="v">AppendIterator, ArrayIterator, ArrayObject, BadFunctionCallException, BadMethodCallException, CachingIterator, CallbackFilterIterator, DirectoryIterator, DomainException, EmptyIterator, FilesystemIterator, FilterIterator, GlobIterator, InfiniteIterator, InvalidArgumentException, IteratorIterator, LengthException, LimitIterator, LogicException, MultipleIterator, NoRewindIterator, OutOfBoundsException, OutOfRangeException, OverflowException, ParentIterator, RangeException, RecursiveArrayIterator, RecursiveCachingIterator, RecursiveCallbackFilterIterator, RecursiveDirectoryIterator, RecursiveFilterIterator, RecursiveIteratorIterator, RecursiveRegexIterator, RecursiveTreeIterator, RegexIterator, RuntimeException, SplDoublyLinkedList, SplFileInfo, SplFileObject, SplFixedArray, SplHeap, SplMinHeap, SplMaxHeap, SplObjectStorage, SplPriorityQueue, SplQueue, SplStack, SplTempFileObject, UnderflowException, UnexpectedValueException </td></tr>
+</table>
+<h2><a name="module_sqlite3">sqlite3</a></h2>
+<table class="tracy-sortable">
+<tr class="h"><th>SQLite3 support</th><th>enabled</th></tr>
+<tr><td class="e">SQLite3 module version </td><td class="v">7.2.34 </td></tr>
+<tr><td class="e">SQLite Library </td><td class="v">3.27.2 </td></tr>
+</table>
+<table class="tracy-sortable">
+<tr class="h"><th>Directive</th><th>Local Value</th><th>Master Value</th></tr>
+<tr><td class="e">sqlite3.defensive</td><td class="v">1</td><td class="v">1</td></tr>
+<tr><td class="e">sqlite3.extension_dir</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+</table>
+<h2><a name="module_standard">standard</a></h2>
+<table class="tracy-sortable">
+<tr><td class="e">Dynamic Library Support </td><td class="v">enabled </td></tr>
+<tr><td class="e">Path to sendmail </td><td class="v"> -t -i  </td></tr>
+</table>
+<table class="tracy-sortable">
+<tr class="h"><th>Directive</th><th>Local Value</th><th>Master Value</th></tr>
+<tr><td class="e">assert.active</td><td class="v">1</td><td class="v">1</td></tr>
+<tr><td class="e">assert.bail</td><td class="v">0</td><td class="v">0</td></tr>
+<tr><td class="e">assert.callback</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">assert.exception</td><td class="v">0</td><td class="v">0</td></tr>
+<tr><td class="e">assert.quiet_eval</td><td class="v">0</td><td class="v">0</td></tr>
+<tr><td class="e">assert.warning</td><td class="v">1</td><td class="v">1</td></tr>
+<tr><td class="e">auto_detect_line_endings</td><td class="v">0</td><td class="v">0</td></tr>
+<tr><td class="e">default_socket_timeout</td><td class="v">60</td><td class="v">60</td></tr>
+<tr><td class="e">from</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">session.trans_sid_hosts</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">session.trans_sid_tags</td><td class="v">a=href,area=href,frame=src,form=</td><td class="v">a=href,area=href,frame=src,form=</td></tr>
+<tr><td class="e">url_rewriter.hosts</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">url_rewriter.tags</td><td class="v">form=</td><td class="v">form=</td></tr>
+<tr><td class="e">user_agent</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+</table>
+<h2><a name="module_tokenizer">tokenizer</a></h2>
+<table class="tracy-sortable">
+<tr><td class="e">Tokenizer Support </td><td class="v">enabled </td></tr>
+</table>
+<h2><a name="module_xml">xml</a></h2>
+<table class="tracy-sortable">
+<tr><td class="e">XML Support </td><td class="v">active </td></tr>
+<tr><td class="e">XML Namespace Support </td><td class="v">active </td></tr>
+<tr><td class="e">libxml2 Version </td><td class="v">2.9.4 </td></tr>
+</table>
+<h2><a name="module_xmlreader">xmlreader</a></h2>
+<table class="tracy-sortable">
+<tr><td class="e">XMLReader </td><td class="v">enabled </td></tr>
+</table>
+<h2><a name="module_xmlwriter">xmlwriter</a></h2>
+<table class="tracy-sortable">
+<tr><td class="e">XMLWriter </td><td class="v">enabled </td></tr>
+</table>
+<h2><a name="module_zlib">zlib</a></h2>
+<table class="tracy-sortable">
+<tr class="h"><th>ZLib Support</th><th>enabled</th></tr>
+<tr><td class="e">Stream Wrapper </td><td class="v">compress.zlib:// </td></tr>
+<tr><td class="e">Stream Filter </td><td class="v">zlib.inflate, zlib.deflate </td></tr>
+<tr><td class="e">Compiled Version </td><td class="v">1.2.11 </td></tr>
+<tr><td class="e">Linked Version </td><td class="v">1.2.11 </td></tr>
+</table>
+<table class="tracy-sortable">
+<tr class="h"><th>Directive</th><th>Local Value</th><th>Master Value</th></tr>
+<tr><td class="e">zlib.output_compression</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">zlib.output_compression_level</td><td class="v">-1</td><td class="v">-1</td></tr>
+<tr><td class="e">zlib.output_handler</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+</table>
+<h2>Additional Modules</h2>
+<table class="tracy-sortable">
+<tr class="h"><th>Module Name</th></tr>
+</table>
+</div>			</div>
+		</div></div>
+		
+
+				<div class="panel">
+		<h2><a data-tracy-ref="^+" class="tracy-toggle tracy-collapsed">HTTP request</a></h2>
+
+		<div class="tracy-collapsed inner">
+			<h3>GET</h3>
+			<p><a href="http://127.0.0.1:8000/www/" target="_blank" rel="noreferrer noopener">http://127.0.0.1:8000/www/</a></p>
+
+			<h3>Headers</h3>
+			<div class="outer">
+			<table class="tracy-sortable">
+			<tr><th>Host</th><td>127.0.0.1:8000</td></tr>
+<tr><th>Accept</th><td>text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8</td></tr>
+<tr><th>Upgrade-Insecure-Requests</th><td>1</td></tr>
+<tr><th>Cookie</th><td>_nss=1; adminer_permanent=c2VydmVy-ZGI%3D-cm9vdA%3D%3D-%3AVWvMiVyTTN437nVg; adminer_sid=f65c8d2b48d97209d2d0eeb1f6634734; adminer_key=bccd9fdc7cbb908337feb55707582caf; adminer_engine=; adminer_settings=; adminer_version=4.8.0</td></tr>
+<tr><th>User-Agent</th><td>Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15</td></tr>
+<tr><th>Accept-Language</th><td>cs-cz</td></tr>
+<tr><th>Accept-Encoding</th><td>gzip, deflate</td></tr>
+<tr><th>Connection</th><td>keep-alive</td></tr>
+			</table>
+			</div>
+
+
+						<h3>$_GET</h3>
+						<p><i>empty</i></p>
+									<h3>$_POST</h3>
+						<p><i>empty</i></p>
+									<h3>$_COOKIE</h3>
+						<div class="outer">
+			<table class="tracy-sortable">
+			<tr><th>_nss</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string"><span>'</span>1<span>'</span></span></pre>
+</td></tr>
+<tr><th>adminer_permanent</th><td><pre class="tracy-dump tracy-light"
+><span class="tracy-dump-string" title="40 characters"><span>'</span>c2VydmVy-ZGI=-cm9vdA==-:VWvMiVyTTN437nVg<span>'</span></span></pre>
+</td></tr>
+<tr><th>adminer_sid</th><td><pre class="tracy-dump tracy-light"
+><span class="tracy-dump-string" title="32 characters"><span>'</span>f65c8d2b48d97209d2d0eeb1f6634734<span>'</span></span></pre>
+</td></tr>
+<tr><th>adminer_key</th><td><pre class="tracy-dump tracy-light"
+><span class="tracy-dump-string" title="32 characters"><span>'</span>bccd9fdc7cbb908337feb55707582caf<span>'</span></span></pre>
+</td></tr>
+<tr><th>adminer_engine</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string"><span>'</span><span>'</span></span></pre>
+</td></tr>
+<tr><th>adminer_settings</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string"><span>'</span><span>'</span></span></pre>
+</td></tr>
+<tr><th>adminer_version</th><td><pre class="tracy-dump tracy-light"><span class="tracy-dump-string" title="5 characters"><span>'</span>4.8.0<span>'</span></span></pre>
+</td></tr>
+			</table>
+			</div>
+								</div></div>
+
+
+		<div class="panel">
+		<h2><a data-tracy-ref="^+" class="tracy-toggle tracy-collapsed">HTTP response</a></h2>
+
+		<div class="tracy-collapsed inner">
+			<h3>Headers</h3>
+						<div class="outer">
+			<table class="tracy-sortable">
+			<tr><th>X-Powered-By</th><td>PHP/7.2.34</td></tr>
+<tr><th>Content-type</th><td>text/html; charset=UTF-8</td></tr>
+			</table>
+			</div>
+					</div></div>
+		
+
+		
+		<footer>
+			<ul>
+				<li><b><a href="https://nette.org/make-donation?to=tracy" target="_blank" rel="noreferrer noopener">Please support Tracy via a donation 💙️</a></b></li>
+				<li>Report generated at 2021/02/27 14:59:38</li>
+				<li>PHP 7.2.34</li><li>Apache/2.4.38 (Debian)</li><li>Tracy 2.8.3</li>			</ul>
+			<div class="footer-logo"><a href="https://tracy.nette.org" rel="noreferrer"></a></div>
+		</footer>
+	</div>
+	<meta itemprop=tracy-snapshot content='[]'>
+</div>
+
+<script>
+'use strict';
+(function(){const MOVE_THRESHOLD=100;class Toggle{static init(){let start;document.documentElement.addEventListener('mousedown',(e)=>{start=[e.clientX,e.clientY];});document.documentElement.addEventListener('click',(e)=>{let el;if(!e.shiftKey&&!e.ctrlKey&&!e.metaKey&&(el=e.target.closest('.tracy-toggle'))&&Math.pow(start[0]-e.clientX,2)+Math.pow(start[1]-e.clientY,2)<MOVE_THRESHOLD){Toggle.toggle(el,undefined,e);e.stopImmediatePropagation();}});Toggle.init=function(){};}static toggle(el,expand,e){let collapsed=el.classList.contains('tracy-collapsed'),ref=el.getAttribute('data-tracy-ref')||el.getAttribute('href',2),dest=el;if(typeof expand==='undefined'){expand=collapsed;}if(!ref||ref==='#'){ref='+';}else if(ref.substr(0,1)==='#'){dest=document;}ref=ref.match(/(\^\s*([^+\s]*)\s*)?(\+\s*(\S*)\s*)?(.*)/);dest=ref[1]?dest.parentNode:dest;dest=ref[2]?dest.closest(ref[2]):dest;dest=ref[3]?Toggle.nextElement(dest.nextElementSibling,ref[4]):dest;dest=ref[5]?dest.querySelector(ref[5]):dest;el.classList.toggle('tracy-collapsed',!expand);dest.classList.toggle('tracy-collapsed',!expand);el.dispatchEvent(new CustomEvent('tracy-toggle',{bubbles:true,detail:{relatedTarget:dest,collapsed:!expand,originalEvent:e}}));}static persist(baseEl,restore){let saved=[];baseEl.addEventListener('tracy-toggle',(e)=>{if(saved.indexOf(e.target)<0){saved.push(e.target);}});let toggles=JSON.parse(sessionStorage.getItem('tracy-toggles-'+baseEl.id));if(toggles&&restore!==false){toggles.forEach((item)=>{let el=baseEl;for(let i in item.path){if(!(el=el.children[item.path[i]])){return;}}if(el.textContent===item.text){Toggle.toggle(el,item.expand);}});}window.addEventListener('unload',()=>{toggles=saved.map((el)=>{let item={path:[],text:el.textContent,expand:!el.classList.contains('tracy-collapsed')};do{item.path.unshift(Array.from(el.parentNode.children).indexOf(el));el=el.parentNode;}while(el&&el!==baseEl);return item;});sessionStorage.setItem('tracy-toggles-'+baseEl.id,JSON.stringify(toggles));});}static nextElement(el,selector){while(el&&selector&&!el.matches(selector)){el=el.nextElementSibling;}return el;}}let Tracy=window.Tracy=window.Tracy||{};Tracy.Toggle=Tracy.Toggle||Toggle;})();(function(){class TableSort{static init(){document.documentElement.addEventListener('click',(e)=>{if(e.target.matches('.tracy-sortable > :first-child > tr:first-child *')){TableSort.sort(e.target.closest('td,th'));}});TableSort.init=function(){};}static sort(tcell){let tbody=tcell.closest('table').tBodies[0];let preserveFirst=!tcell.closest('thead')&&!tcell.parentNode.querySelectorAll('td').length;let asc=!(tbody.tracyAsc===tcell.cellIndex);tbody.tracyAsc=asc?tcell.cellIndex:null;let getText=(cell)=>{return cell?(cell.getAttribute('data-order')||cell.innerText):'';};Array.from(tbody.children).slice(preserveFirst?1:0).sort((a,b)=>{return function(v1,v2){return v1!==''&&v2!==''&&!isNaN(v1)&&!isNaN(v2)?v1-v2:v1.toString().localeCompare(v2);}(getText((asc?a:b).children[tcell.cellIndex]),getText((asc?b:a).children[tcell.cellIndex]));}).forEach((tr)=>{tbody.appendChild(tr);});}}let Tracy=window.Tracy=window.Tracy||{};Tracy.TableSort=Tracy.TableSort||TableSort;})();(function(){const COLLAPSE_COUNT=7,COLLAPSE_COUNT_TOP=14,TYPE_ARRAY='a',TYPE_OBJECT='o',TYPE_RESOURCE='r',PROP_VIRTUAL=4,PROP_PRIVATE=2;const HINT_CTRL='Ctrl-Click to open in editor',HINT_ALT='Alt-Click to expand/collapse all child nodes';class Dumper{static init(context){(context||document).querySelectorAll('[itemprop=tracy-snapshot], [data-tracy-snapshot]').forEach((el)=>{let preList,snapshot=JSON.parse(el.getAttribute('data-tracy-snapshot'));if(el.tagName==='META'){snapshot=JSON.parse(el.getAttribute('content'));preList=el.parentElement.querySelectorAll('[data-tracy-dump]');}else if(el.matches('[data-tracy-dump]')){preList=[el];el.removeAttribute('data-tracy-snapshot');}else{el.querySelectorAll('[data-tracy-dump]').forEach((el)=>{if(el.nextSibling){el.parentNode.removeChild(el.nextSibling);}el.parentNode.replaceChild(build(JSON.parse(el.getAttribute('data-tracy-dump')),snapshot,el.classList.contains('tracy-collapsed')),el);});return;}preList.forEach((el)=>{let built=build(JSON.parse(el.getAttribute('data-tracy-dump')),snapshot,el.classList.contains('tracy-collapsed'));el.appendChild(built);el.classList.remove('tracy-collapsed');el.removeAttribute('data-tracy-dump');});});if(Dumper.inited){return;}Dumper.inited=true;document.documentElement.addEventListener('click',(e)=>{let el;if(e.ctrlKey&&(el=e.target.closest('[data-tracy-href]'))){location.href=el.getAttribute('data-tracy-href');return false;}});document.documentElement.addEventListener('tracy-toggle',(e)=>{if(!e.target.matches('.tracy-dump *')){return;}let cont=e.detail.relatedTarget;let origE=e.detail.originalEvent;if(origE&&origE.usedIds){toggleChildren(cont,origE.usedIds);return;}else if(origE&&origE.altKey&&cont.querySelector('.tracy-toggle')){if(e.detail.collapsed){e.target.classList.toggle('tracy-collapsed',false);cont.classList.toggle('tracy-collapsed',false);e.detail.collapsed=false;}let expand=e.target.tracyAltExpand=!e.target.tracyAltExpand;toggleChildren(cont,expand?{}:false);}cont.classList.toggle('tracy-dump-flash',!e.detail.collapsed);});document.documentElement.addEventListener('animationend',(e)=>{if(e.animationName==='tracy-dump-flash'){e.target.classList.toggle('tracy-dump-flash',false);}});document.addEventListener('mouseover',(e)=>{if(!e.target.matches('.tracy-dump *')){return;}let el;if(e.target.matches('.tracy-dump-hash')&&(el=e.target.closest('.tracy-dump'))){el.querySelectorAll('.tracy-dump-hash').forEach((el)=>{if(el.textContent===e.target.textContent){el.classList.add('tracy-dump-highlight');}});return;}if((el=e.target.closest('.tracy-toggle'))&&!el.title){el.title=HINT_ALT;}});document.addEventListener('mouseout',(e)=>{if(e.target.matches('.tracy-dump-hash')){document.querySelectorAll('.tracy-dump-hash.tracy-dump-highlight').forEach((el)=>{el.classList.remove('tracy-dump-highlight');});}});Tracy.Toggle.init();}}function build(data,repository,collapsed,parentIds,keyType){let id,type=data===null?'null':typeof data,collapseCount=collapsed===null?COLLAPSE_COUNT:COLLAPSE_COUNT_TOP;if(type==='null'||type==='number'||type==='boolean'){return createEl(null,null,[createEl('span',{'class':'tracy-dump-'+type.replace('ean','')},[data+''])]);}else if(type==='string'){data={string:data.replace(/&/g,'&amp;').replace(/</g,'&lt;'),length:[...data].length};}else if(Array.isArray(data)){data={array:null,items:data};}else if(data.ref){id=data.ref;data=repository[id];if(!data){throw new UnknownEntityException;}}if(data.string!==undefined||data.bin!==undefined){let s=data.string===undefined?data.bin:data.string;if(keyType===TYPE_ARRAY){return createEl(null,null,[createEl('span',{'class':'tracy-dump-string'},{html:'<span class="tracy-dump-lq">\'<\/span>'+s+'<span>\'<\/span>'}),]);}else if(keyType!==undefined){if(type!=='string'){s='<span class="tracy-dump-lq">\'<\/span>'+s+'<span>\'<\/span>';}const classes=['tracy-dump-public','tracy-dump-protected','tracy-dump-private','tracy-dump-dynamic','tracy-dump-virtual',];return createEl(null,null,[createEl('span',{'class':classes[typeof keyType==='string'?PROP_PRIVATE:keyType],'title':typeof keyType==='string'?'declared in '+keyType:null,},{html:s}),]);}let count=(s.match(/\n/g)||[]).length;if(count){let collapsed=count>=COLLAPSE_COUNT;return createEl(null,null,[createEl('span',{'class':collapsed?'tracy-toggle tracy-collapsed':'tracy-toggle'},['string']),'\n',createEl('div',{'class':'tracy-dump-string'+(collapsed?' tracy-collapsed':''),'title':data.length+(data.bin?' bytes':' characters'),},{html:'<span class="tracy-dump-lq">\'<\/span>'+s+'<span>\'<\/span>'}),]);}return createEl(null,null,[createEl('span',{'class':'tracy-dump-string','title':data.length+(data.bin?' bytes':' characters'),},{html:'<span>\'<\/span>'+s+'<span>\'<\/span>'}),]);}else if(data.number){return createEl(null,null,[createEl('span',{'class':'tracy-dump-number'},[data.number])]);}else if(data.text!==undefined){return createEl(null,null,[createEl('span',{class:'tracy-dump-virtual'},[data.text])]);}else{parentIds=parentIds?parentIds.slice():[];let recursive=id&&parentIds.indexOf(id)>-1;parentIds.push(id);return buildStruct(data.array!==undefined?[createEl('span',{'class':'tracy-dump-array'},['array']),' ('+(data.length||data.items.length)+')']:[createEl('span',{'class':data.object?'tracy-dump-object':'tracy-dump-resource',title:data.editor?'Declared in file '+data.editor.file+' on line '+data.editor.line+(data.editor.url?'\n'+HINT_CTRL:'')+'\n'+HINT_ALT:null,'data-tracy-href':data.editor?data.editor.url:null},[data.object||data.resource]),...(id?[' ',createEl('span',{'class':'tracy-dump-hash'},[data.resource?'@'+id.substr(1):'#'+id])]:[])],recursive?' RECURSION':' …',recursive?null:data.items,collapsed===true||data.collapsed||(data.items&&data.items.length>=collapseCount),data.items&&data.length>data.items.length,data.object?TYPE_OBJECT:data.resource?TYPE_RESOURCE:TYPE_ARRAY,repository,parentIds);}}function buildStruct(span,ellipsis,items,collapsed,cut,type,repository,parentIds){let res,toggle,div,handler;if(!items||!items.length){span.push(!items||items.length?ellipsis:'');return createEl(null,null,span);}res=createEl(null,null,[toggle=createEl('span',{'class':collapsed?'tracy-toggle tracy-collapsed':'tracy-toggle'},span),'\n',div=createEl('div',{'class':collapsed?'tracy-collapsed':null})]);if(collapsed){toggle.addEventListener('tracy-toggle',handler=function(){toggle.removeEventListener('tracy-toggle',handler);createItems(div,items,type,repository,parentIds,null);if(cut){createEl(div,null,['…\n']);}});}else{createItems(div,items,type,repository,parentIds,true);if(cut){createEl(div,null,['…\n']);}}return res;}function createEl(el,attrs,content){if(!(el instanceof Node)){el=el?document.createElement(el):document.createDocumentFragment();}for(let id in attrs||{}){if(attrs[id]!==null){el.setAttribute(id,attrs[id]);}}if(content&&content.html!==undefined){el.innerHTML=content.html;return el;}content=content||[];for(let id=0;id<content.length;id++){let child=content[id];if(child!==null){el.appendChild(child instanceof Node?child:document.createTextNode(child));}}return el;}function createItems(el,items,type,repository,parentIds,collapsed){let key,val,vis,ref,i,tmp;for(i=0;i<items.length;i++){if(type===TYPE_ARRAY){[key,val,ref]=items[i];}else{[key,val,vis=PROP_VIRTUAL,ref]=items[i];}createEl(el,null,[build(key,null,null,null,type===TYPE_ARRAY?TYPE_ARRAY:vis),type===TYPE_ARRAY?' => ':': ',...(ref?[createEl('span',{'class':'tracy-dump-hash'},['&'+ref]),' ']:[]),tmp=build(val,repository,collapsed,parentIds),tmp.lastElementChild.tagName==='DIV'?'':'\n',]);}}function toggleChildren(cont,usedIds){let hashEl,id;cont.querySelectorAll(':scope > .tracy-toggle').forEach((el)=>{hashEl=(el.querySelector('.tracy-dump-hash')||el.previousElementSibling);id=hashEl&&hashEl.matches('.tracy-dump-hash')?hashEl.textContent:null;if(!usedIds||(id&&usedIds[id])){Tracy.Toggle.toggle(el,false);}else{usedIds[id]=true;Tracy.Toggle.toggle(el,true,{usedIds:usedIds});}});}function UnknownEntityException(){}let Tracy=window.Tracy=window.Tracy||{};Tracy.Dumper=Tracy.Dumper||Dumper;function init(){Tracy.Dumper.init();}if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',init);}else{init();}})();(function(){class BlueScreen{static init(ajax){let blueScreen=document.getElementById('tracy-bs');let styles=[];for(let i=0;i<document.styleSheets.length;i++){let style=document.styleSheets[i];if(!style.ownerNode.classList.contains('tracy-debug')){style.oldDisabled=style.disabled;style.disabled=true;styles.push(style);}}if(navigator.platform.indexOf('Mac')>-1){blueScreen.classList.add('mac');}document.getElementById('tracy-bs-toggle').addEventListener('tracy-toggle',function(){let collapsed=this.classList.contains('tracy-collapsed');for(let i=0;i<styles.length;i++){styles[i].disabled=collapsed?styles[i].oldDisabled:true;}});if(!ajax){document.body.appendChild(blueScreen);let id=location.href+document.getElementById('tracy-bs-error').textContent;Tracy.Toggle.persist(blueScreen,sessionStorage.getItem('tracy-toggles-bskey')===id);sessionStorage.setItem('tracy-toggles-bskey',id);}if(inited){return;}inited=true;document.addEventListener('keyup',(e)=>{if(e.keyCode===27&&!e.shiftKey&&!e.altKey&&!e.ctrlKey&&!e.metaKey){Tracy.Toggle.toggle(document.getElementById('tracy-bs-toggle'));}});Tracy.TableSort.init();}static loadAjax(content){let ajaxBs=document.getElementById('tracy-bs');if(ajaxBs){ajaxBs.parentNode.removeChild(ajaxBs);}document.body.insertAdjacentHTML('beforeend',content);ajaxBs=document.getElementById('tracy-bs');Tracy.Dumper.init(ajaxBs);BlueScreen.init(true);window.scrollTo(0,0);}}let inited;let Tracy=window.Tracy=window.Tracy||{};Tracy.BlueScreen=Tracy.BlueScreen||BlueScreen;})();Tracy.BlueScreen.init();
+</script>
+</body>
+</html>
